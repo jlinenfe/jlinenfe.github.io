@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Cyclistic</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li class="current"><a href="Projects.html">Projects</a></li>
+						<li><a href="docs.html">Documents</a></li>
+					</ul>
+				</nav>
+	
+			</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+
+								<article>
+                                    <h1 class="major">Overview</h1>
+									<p>This project focuses on analyzing historical data from a fictional bike-sharing company to uncover key insights and trends. The primary objective is to explore patterns in user behavior, identify factors affecting member retention, and develop strategies to convert casual users into long-term subscribers. Through data cleaning, analysis, and visualization, actionable recommendations are made to enhance the company’s overall performance and customer engagement. </p>
+                                    <p>&nbsp;</p>
+									<div class="button-container">
+                                        <a href="https://github.com/Harrisinho17/CyclisticCaseStudy" target="_blank" class="special">Github Repository</a>
+                                      </div>
+                                    <p>&nbsp;</p>
+                                    <h2>Analysis</h2>
+                                    <div class="tile-container">
+                                        <div class="tile">
+                                            <a href="https://public.tableau.com/app/profile/alexander.harris7255/viz/CyclisticDashboard_17345401887660/Dashboard1?publish=yes">
+                                                <div class="tile-image">
+                                                  <img src="assets/css/images/CyclisticUsageData.jpg" alt="Cyclistic Usage" />
+                                                </div>
+                                              <div class="tile-text">
+                                                <h2>Cyclistic Usage Analysis</h2>
+                                                <p> The first dashboard I created was based on the overall usage patterns. Below will be some interesting findings and I will come up with a business plan to convert casual users to members.</p> 
+                                              </div>
+                                            </a>
+                                        </div>
+                                        <div class="tile">
+                                              <div class="tile-text">
+                                                <p> <i class="fas fa-bicycle"></i> - On average, members used the Cyclistic service for shorter ride durations (as indicated by the average ride minutes per user). However, the total number of rides taken by members was nearly double that of casual users, suggesting that members are more likely to consistently utilize the service after subscribing. Cyclistic currently offers three types of services: Classic Bikes, Electric Bikes, and Electric Scooters. Among these, Electric Bikes are the most frequently used. Members predominantly used both Classic Bikes and Electric Bikes, while Electric Scooters—though with a smaller sample size—were more commonly used by casual riders.</p>
+                                                <p> &nbsp; </p>
+                                                <p> <i class="fas fa-bicycle"></i> - The date analysis was conducted using the start_at and end_at columns by converting the data into timestamps and extracting the necessary time components for analysis. This allowed me to examine Cyclistic service usage patterns by hour, weekday, and month. By hour, the data revealed that 17:00 was the peak usage time, with over 500,000 occurrences. The weekday analysis showed an even distribution of usage across all days, with Saturday experiencing a slightly higher frequency. Monthly analysis indicated that the summer months had the highest usage, which aligns with the company’s fictional location in Chicago, where winter temperatures often drop below 10 degrees Fahrenheit, likely discouraging outdoor activities. </p>
+                                              </div>
+                                            </a>
+                                        </div>
+                                        <div class="tile">
+                                            <a href="https://public.tableau.com/app/profile/alexander.harris7255/viz/CyclisticDashboard_17345401887660/Dashboard1?publish=yes">
+                                                <div class="tile-image">
+                                                  <img src="assets/css/images/CyclisticLocationData.jpg" alt="Cyclistic Location" />
+                                                </div>
+                                              <div class="tile-text">
+                                                <h2>Cyclistic Location Analysis</h2>
+                                                <p> The second dashboard I created was based on the location mapping of Cyclisitc instances. This data will be used to get a sense of where members and casuals like to utilize the service and where the stations are.</p> 
+                                              </div>
+                                            </a>
+                                        </div>
+                                        <div class="tile">
+                                              <div class="tile-text">
+                                                <p> <i class="fas fa-bicycle"></i> - The geographic data reinforces insights from the previous visualization, demonstrating that members accounted for 64.16% of the total kilometers traveled, indicating their frequent and extensive use of Cyclistic services. This highlights members’ tendency to use the service consistently over time. While the average distances traveled per service type were comparable, casual users covered greater distances on Classic Bikes than members. This suggests that casual users might use Classic Bikes for longer, potentially leisure-focused rides, whereas members may prioritize efficiency and consistency in their usage patterns.</p>
+                                                <p> &nbsp; </p>
+                                                <p> <i class="fas fa-bicycle"></i> - The density mapping of members revealed a higher concentration of activity around central Chicago, particularly near the business district, suggesting that members primarily use Cyclistic services for commuting or other urban activities. In contrast, the density mapping for casual users showed a broader dispersion, with coastal areas emerging as hotspots for usage. This pattern indicates that casual users are more likely to use Cyclistic services for leisure or recreational purposes rather than routine travel, highlighting distinct behavior between the two user groups.</p>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <h2>Recults and Reccomendations</h2>
+                                    <div class="tile-container">
+                                        <div class="tile">
+                                            <div class="tile-text">
+                                              <h2>Promote Membership in High-use Areas</h2>
+                                              <p>Leveraging density mapping insights, targeted marketing campaigns can be deployed in areas with high casual user activity, such as coastal zones and recreational areas. Digital and physical promotions at popular docking stations can include membership incentives, highlighting the convenience and cost savings for frequent riders. Additionally, focusing campaigns in business districts emphasizes Cyclistic’s utility for commuting, which appeals to member behaviors.</p> 
+                                            </div>
+                                          </a>
+                                      </div>
+                                        <div class="tile">
+                                            <div class="tile-text">
+                                            <h2>Enhance Electirc Scooter Options</h2>
+                                            <p>Since Electric Scooters were frequently used by casual riders, introducing scooter-specific memberships can attract this group. Plans tailored to short-distance or leisure riders, combined with expanded scooter availability in casual-heavy areas, could drive conversions. This strategy ensures casual users see value in subscribing while maintaining their preferred mode of transport, while also encouraging repeat usage through exclusive member perks such as discounted rides or priority access to scooters.</p> 
+                                            </div>
+                                           </a>
+                                      </div>
+                                      <div class="tile">
+                                        <div class="tile-text">
+                                        <h2>Gamify Membership Management</h2>
+                                        <p>Implementing features like mileage challenges and exclusive events for members can drive casual-to-member conversions. For instance, casual riders could be incentivized with free ride credits for meeting usage milestones, encouraging them to try membership. Hosting community-focused events such as bike tours or workshops adds value to being a member.</p> 
+                                        </div>
+                                       </a>
+                                    </div>
+                                    <div class="tile">
+                                        <div class="tile-text">
+                                        <h2>Educate on Membership Benefits at Docking Stations</h2>
+                                        <p>Physical touchpoints like interactive displays at docking stations can educate casual users on the financial and practical benefits of membership. For example, showing real-time cost savings based on their current usage can highlight the value of converting. Having Cyclistic representatives on-site to assist with questions and promotions can further enhance conversion efforts.</p> 
+                                        </div>
+                                       </a>
+                                    </div>
+                                  </div>
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			
+			<!-- Footer -->
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <section class="col-3 col-6-narrower col-12-mobilep">
+                            <h3></h3>
+                            <ul class="links">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </section>
+                       
+                        <section class="col-6 col-12-narrower">
+                            <h3>Get In Touch</h3>
+                            <p>Feel free to reach out to me with any questions, opportunities, or collaborations. Whether you’d like to discuss a project, need assistance with technical solutions, or simply want to connect, I’d be happy to hear from you. Let’s build something great together!</p>
+                            <form method="post" action="https://formspree.io/f/xdkneqdv">
+                                <div class="row gtr-50">
+                                    <div class="col-6 col-12-mobilep">
+                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                    </div>
+                                    <div class="col-6 col-12-mobilep">
+                                        <input type="email" name="email" id="email" placeholder="Email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <li><input type="submit" class="button alt" value="Send Message" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+
+                
+                </section id="footer">
+                <!-- Icons -->
+                    <ul class="icons">
+                        <li><a href="https://github.com/Harrisinho17" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.kaggle.com/alexbharr" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/alexanderbharris-9906/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    </ul>
+            </div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+				var titleBarTitle = document.querySelector("#titleBar .title");
+				if (titleBarTitle && (titleBarTitle.textContent === "undefined" || titleBarTitle.textContent.trim() === "")) {
+					titleBarTitle.textContent = "";
+				}
+				});
+			</script>
+
+	</body>
+</html>
