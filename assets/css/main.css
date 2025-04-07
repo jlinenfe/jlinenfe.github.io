@@ -2112,11 +2112,27 @@ input, select, textarea {
 			}
 
 	.image.project img {
-		border-radius: 10px; /* Adjust as needed */
+		border-radius: 10px; 
 		display: block;
 		max-width: 100%;
 		height: auto;
 		}
+
+
+	.portrait {
+		float: right;
+		margin-left: 1.5em;
+		margin-bottom: 1em;
+		shape-outside: ellipse();
+		-webkit-shape-outside: ellipse(); 
+	}
+	
+	.portrait img {
+		border-radius: 60% / 50%;
+		width: auto;
+		height: 400px; 
+		max-width: 100%; 
+	}
 
 /* Icon */
 
@@ -3309,6 +3325,19 @@ input, select, textarea {
 			.wrapper {
 				padding: 2em 0 1px 0;
 			}
+			.portrait {
+				float: none;
+				shape-outside: none;
+				margin: 0 auto 2em auto; 
+				display: block; 
+				text-align: center;
+			  }
+			
+			  .portrait img {
+				height: auto;   
+				max-width: 80%;   
+				display: inline-block;
+			  }
 
 	}
 
@@ -3403,7 +3432,7 @@ h3 {
   }
 
 h4 {
-	font-size: 2.8em; /* Adjust as needed */
+	font-size: 2.8em; 
 	text-align: center; 
   }
 
