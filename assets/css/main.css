@@ -3392,10 +3392,16 @@ input, select, textarea {
 	  }
 
 h1 {
-	font-size: 4em  ;
+	font-size: 4.8em  ;
 	margin-top: 1em  ;
 	padding: 0.5em 1  ;
 }
+
+h4 {
+	font-size: 2.8em; /* Adjust as needed */
+	text-align: center; 
+  }
+
 
 /* ---- reset ---- */
 body {
@@ -3617,6 +3623,9 @@ p {
   
   .tile:hover {
 	transform: scale(1.03);
+	background-color: #000000;
+	border: 1px solid #13E8E9;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
   }
   
   .tile img {
