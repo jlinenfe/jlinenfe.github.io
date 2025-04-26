@@ -27,95 +27,95 @@
           <div class="container">
               <div id="content">
                   <article>
-                      <header>
-                        <p></p>
-                        <h4>Upcoming Projects</h4>
-                      </header>
-                      <div class="tile-container">
-                            <div class="tile">
-                              <!-- <a href=""> -->
-                                  <div class="tile-image">
-                                      <img src="assets/css/images/FlightBoard.jpg" alt="Flight Board" />
-                                    </div>
-                                <div class="tile-text">
-                                  <h3>Airline Data Analysis</h3>
-                                  <p>Not Started Yet</p>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="tile">
-                              <!-- <a href=""> -->
-                                  <div class="tile-image">
-                                      <img src="assets/css/images/ML_AI_Soccer.jpg" alt="ML_AI_Soccer" />
-                                    </div>
-                                <div class="tile-text">
-                                  <h3>AI/ML Football Analysis System</h3>
-                                  <p>Not Started Yet</p>
-                                </div>
-                              </a>
-                            </div>
+                      <div class="filters" style="text-align:center; margin-bottom:20px;">
+                        <button data-filter="All" class="active">All</button>
+                        <button data-filter="Python">Python</button>
+                        <button data-filter="SQL">SQL</button>
+                        <button data-filter="AI/ML">AI/ML</button>
+                        <button data-filter="PowerBI">Power BI</button>
+                        <button data-filter="Tableau">Tableau</button>
                       </div>
-                      <header>
-                          <p></p>
-                          <h4>Completed Projects</h4>
-                        </header>
-                          <div class="tile-container">
-                            <div class="tile">
-                              <a href="5.OCDAnalysis.html"> 
-                               <div class="tile-text">
-                                 <div class="tile-image">
-                                     <img src="assets/css/images/OCD.jpg" alt="OCD" />
-                                   </div>
-                                 <h3>OCD Patient Analysis</h3>
-                                 <p>(31/3/2025)</p>
-                               </div>
-                             </a>
-                           </div>
-                            <div class="tile">
-                                <a href="4.Cyclistic.html">
-                                  <div class="tile-image">
-                                      <img src="assets/css/images/Cyclistic.jpg" alt="Cyclistic Case Study" />
-                                    </div>
-                                  <div class="tile-text">
-                                    <h3>Cyclistic Case Study</h3>
-                                    <p>(24-12-2024)</p>
-                                  </div>
-                                </a>
+                      <div class="tile-container">
+                        <div class="tile" data-category="AI/ML PowerBI SQL Python">
+                          <div class="tile-image">
+                            <img src="assets/css/images/FlightBoard.jpg" alt="Flight Board" />
+                          </div>
+                          <div class="tile-text">
+                            <h3>Airline Data Analysis</h3>
+                            <p>Not Started Yet</p>
+                          </div>
+                        </div>
+
+                        <div class="tile" data-category="AI/ML PowerBI SQL Python">
+                          <div class="tile-image">
+                            <img src="assets/css/images/ML_AI_Soccer.jpg" alt="ML_AI_Soccer" />
+                          </div>
+                          <div class="tile-text">
+                            <h3>AI/ML Football Analysis System</h3>
+                            <p>Not Started Yet</p>
+                          </div>
+                        </div>
+
+                        <div class="tile" data-category="SQL Python Tableau"> 
+                          <a href="5.OCDAnalysis.html">
+                            <div class="tile-text">
+                              <div class="tile-image">
+                                <img src="assets/css/images/OCD.jpg" alt="OCD" />
                               </div>
-                              <div class="tile">
-                                <a href="3.Fifa_IVR.html">
-                                  <div class="tile-image">
-                                      <img src="assets/css/images/Fifa.jpg" alt="Fifa IVR Case Study" />
-                                    </div>
-                                  <div class="tile-text">
-                                    <h3>Fifa IVR Case Study</h3>
-                                    <p>(14-11-2024)</p>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="tile">
-                                <a href="2.Aus_Airbnb.html">
-                                  <div class="tile-image">
-                                      <img src="assets/css/images/Brisbane_Aus.jpg" alt="Brisbane AirBNB Case Study" />
-                                    </div>
-                                  <div class="tile-text">
-                                    <h3>Brisbane AirBNB Case Study</h3>
-                                    <p>(21-10-2024)</p>
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="tile">
-                                  <a href="1.Covid.html">
-                                      <div class="tile-image">
-                                          <img src="assets/css/images/CovidData.jpg" alt="Covid Data Exploration & Viz" />
-                                        </div>
-                                    <div class="tile-text">
-                                      <h3>Covid Data Exploration & Viz</h3>
-                                      <p>(17-9-2024)</p>
-                                    </div>
-                                  </a>
-                                </div>
-                              </div>
+                              <h3>OCD Patient Analysis</h3>
+                              <p>(31/3/2025)</p>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="tile" data-category="Tableau SQL Python">
+                          <a href="4.Cyclistic.html">
+                            <div class="tile-image">
+                              <img src="assets/css/images/Cyclistic.jpg" alt="Cyclistic Case Study" />
+                            </div>
+                            <div class="tile-text">
+                              <h3>Cyclistic Case Study</h3>
+                              <p>(24-12-2024)</p>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="tile" data-category="SQL Tableau ">
+                          <a href="3.Fifa_IVR.html">
+                            <div class="tile-image">
+                              <img src="assets/css/images/Fifa.jpg" alt="Fifa IVR Case Study" />
+                            </div>
+                            <div class="tile-text">
+                              <h3>Fifa IVR Case Study</h3>
+                              <p>(14-11-2024)</p>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="tile" data-category="SQL Tableau Python">
+                          <a href="2.Aus_Airbnb.html">
+                            <div class="tile-image">
+                              <img src="assets/css/images/Brisbane_Aus.jpg" alt="Brisbane AirBNB Case Study" />
+                            </div>
+                            <div class="tile-text">
+                              <h3>Brisbane AirBNB Case Study</h3>
+                              <p>(21-10-2024)</p>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="tile" data-category="SQL Tableau">
+                          <a href="1.Covid.html">
+                            <div class="tile-image">
+                              <img src="assets/css/images/CovidData.jpg" alt="Covid Data Exploration & Viz" />
+                            </div>
+                            <div class="tile-text">
+                              <h3>Covid Data Exploration & Viz</h3>
+                              <p>(17-9-2024)</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
                           </article>
 
@@ -194,5 +194,68 @@
 				});
 			</script>
 
+    <script>
+const filterButtons = document.querySelectorAll('.filters button');
+const projectTiles = document.querySelectorAll('.tile-container .tile');
+const container = document.querySelector('.tile-container');
+
+// Smooth FLIP animation
+function smoothMoveTiles(tiles, container) {
+  const firstRects = new Map();
+
+  // Record initial position
+  tiles.forEach(tile => {
+    firstRects.set(tile, tile.getBoundingClientRect());
+  });
+
+  // Reorder tiles
+  tiles.forEach(tile => container.appendChild(tile));
+
+  // Animate from old to new position
+  tiles.forEach(tile => {
+    const lastRect = tile.getBoundingClientRect();
+    const firstRect = firstRects.get(tile);
+
+    const deltaX = firstRect.left - lastRect.left;
+    const deltaY = firstRect.top - lastRect.top;
+
+    tile.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    tile.style.transition = 'transform 0s'; // Reset transition
+
+    requestAnimationFrame(() => {
+      tile.style.transition = 'transform 0.5s ease';
+      tile.style.transform = '';
+    });
+  });
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('.filters button.active')?.classList.remove('active');
+    button.classList.add('active');
+    const filter = button.getAttribute('data-filter');
+
+    const tilesArray = Array.from(projectTiles);
+
+    // Apply hide/show classes
+    tilesArray.forEach(tile => {
+      const category = tile.getAttribute('data-category');
+      if (filter === 'All' || (category && category.includes(filter))) {
+        tile.classList.remove('hide');
+      } else {
+        tile.classList.add('hide');
+      }
+    });
+
+    // After animations finish, reorder smoothly
+    setTimeout(() => {
+      const visibleTiles = tilesArray.filter(tile => !tile.classList.contains('hide'));
+      const hiddenTiles = tilesArray.filter(tile => tile.classList.contains('hide'));
+
+      smoothMoveTiles([...visibleTiles, ...hiddenTiles], container);
+    }, 500); // Match fade time
+  });
+});
+    </script>
 	</body>
 </html>
