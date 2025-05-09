@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-}
+  } /* Ensure this closing brace matches an opening brace */
 
 ol, ul {
 	list-style: none;
@@ -79,7 +79,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #000000;
+		background: #F0F4F8 ;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -177,6 +177,13 @@ input, select, textarea {
 		border-left: solid 0.5em #e0e0e0;
 		font-style: italic;
 		padding: 1em 0 1em 2em;
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background: #ccc; 
+		margin: 20px 0; 
 	}
 
 /* Container */
@@ -1963,7 +1970,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #999;
+		color: #000000;
 		font-size: 1.25em;
 		position: relative;
 		margin-top: -1.25em;
@@ -2016,7 +2023,7 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
 		background: #000000;
-		border: solid 1px #e0e0e0;
+		border: solid 2px #e0e0e0;
 		border-radius: 5px;
 		color: inherit;
 		display: block;
@@ -2079,7 +2086,7 @@ input, select, textarea {
 			border-radius: 5px;
 		}
 
-		.image.left {
+		.image.center {
 			display: block;
 			float: left;
 			margin: 0 2em 2em 0;
@@ -2087,7 +2094,7 @@ input, select, textarea {
 			top: 0.25em;
 		}
 
-			.image.left img {
+			.image.center img {
 				display: block;
 				width: 100%;
 			}
@@ -2111,12 +2118,18 @@ input, select, textarea {
 				width: 100%;
 			}
 
-	.image.project img {
-		border-radius: 10px; 
-		display: block;
-		max-width: 100%;
-		height: auto;
+		.image.project img {
+			border-radius: 10px; 
+			display: block;
+			max-width: 100%;
+			height: auto;
+			transition: transform 0.3s ease, box-shadow 0.3s ease; 
 		}
+		
+			.image.project img:hover {
+				transform: scale(1.2); 
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+			}
 
 
 	.portrait {
@@ -2132,6 +2145,13 @@ input, select, textarea {
 		width: auto;
 		height: 400px; 
 		max-width: 100%; 
+	}
+
+	.center img {
+		border-radius: 60% / 60%;
+		max-width: fit-content;
+		height: auto;
+		max-width: auto;
 	}
 
 /* Icon */
@@ -2487,7 +2507,7 @@ input, select, textarea {
 		input[type="button"].alt,
 		button.alt,
 		.button.alt {
-			background-color: #555555;
+			background-color: #000000;
 			color: #fff;
 		}
 
@@ -2496,7 +2516,7 @@ input, select, textarea {
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #626262;
+				background-color: #13E8E9;
 			}
 
 			input[type="submit"].alt:active,
@@ -2572,7 +2592,7 @@ input, select, textarea {
 	#header {
 		text-align: center;
 		padding: 1em 0 0 0;
-		background-color: #000000;
+		background-color: #ffffff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
 		background-size: 10% 6em,					10% 6em,					auto;
@@ -2592,7 +2612,7 @@ input, select, textarea {
 
 	#nav {
 		cursor: default;
-		background-color: #333;
+		background-color: #222;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
@@ -2605,7 +2625,7 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 			height: 0.75em;
-			background-color: #000000;
+			background-color: #ffffff;
 			background-image: url("images/bg01.png");
 		}
 
@@ -2769,7 +2789,8 @@ input, select, textarea {
 		
 
 		.wrapper.style2 {
-			background-color: #000000;
+			background-color: #ffffff;
+			color:#000;
 			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");
 			background-position: top left,						bottom left,					top left;
 			background-size: 100% 6em,						100% 6em,						auto;
@@ -2793,7 +2814,27 @@ input, select, textarea {
 				.wrapper.style3 .button:hover {
 					color: #37c0fb  ;
 				}
-		
+		/* Sidebar */
+#sidebar {
+	background-color: #cfcfcf; 
+	padding: 2em;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #sidebar h2, 
+  #sidebar h3, 
+  #sidebar h4 {
+	color: #2c3e50; 
+  }
+  
+  #sidebar p {
+	color: #555; 
+	font-size: 1em;
+	line-height: 1.6;
+  }
+  
+
 	
 /* CTA */
 
@@ -2816,7 +2857,9 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 2em 0 2em 0;
+		padding-bottom: 2px;
+		background-color: #dbdbdb6a;
 	}
 
 		#footer a {
@@ -2852,6 +2895,14 @@ input, select, textarea {
 			text-align: center;
 			font-size: 0.9em;
 		}
+
+		.black-icons .icon {
+			color: black !important;
+		  }
+
+		  .black-icons .icon:hover {
+			color: #13E8E9 !important;
+		  }
 
 /* Wide */
 
@@ -3423,19 +3474,34 @@ input, select, textarea {
 	  }
 
 h1 {
-	font-size: 2.8em  ;
-	margin-top: 1em  ;
-	padding: 0.5em 1  ;
+	font-size: 2.5em  ;
+	text-align: center;
 }
+h2 {
+	color:#000;
+	font-size: 3em; 
+	text-align: center; 
+  }
 
 h3 {
-	font-size: 2em; /* Adjust as needed */
-	text-align: center; 
+	color:#000;
+	font-size: 2.7em; 
+	text-align: center;
   }
 
 h4 {
 	font-size: 2.8em; 
 	text-align: center; 
+  }
+
+  h5 {
+	font-size: 1em; 
+  }
+h6 {
+	font-size:2em;
+	color:#000;
+	text-decoration: underline;
+	text-decoration-color: #000000;
   }
 
 
@@ -3463,7 +3529,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 95%;
-	z-index: 0;          /* Ensure it's in the background */
+	z-index: 0;          
 	background: linear-gradient(to bottom right, #141A6B, #29DBD8);
   }
 
@@ -3473,7 +3539,7 @@ body {
   left: 0;
   width: 100%;
   height: 97%;
-  z-index: 1; /* Higher than the particle background */
+  z-index: 1; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3549,7 +3615,7 @@ body {
 
 
 p {
-  color: #ffffff  ;
+  color: #000000  ;
   font-size: 1.3em  ;
 }
 
@@ -3567,7 +3633,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 2em; /* adds space between tech blocks */
+	gap: 2em; 
 	margin: 2em 0;
   }
   
@@ -3577,7 +3643,7 @@ p {
 	background-color: #222; 
 	padding: 1.5em;
 	border-radius: 8px;
-	color: #fff;
+	color: #fff; 
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
@@ -3631,7 +3697,7 @@ p {
     border: none;
   }
   #nav > ul > li > ul li a {
-    padding: 1em;
+    padding: 0em;
   }
 }
 
@@ -3652,6 +3718,7 @@ p {
   
   .tile {
 	background-color: #0D1B2A;
+	color:#ffffff;
 	border: 1px solid #ddd;
 	width: 300px; 
 	text-align: center;
@@ -3662,8 +3729,7 @@ p {
   
   .tile:hover {
 	transform: scale(1.03);
-	background-color: #000000;
-	border: 1px solid #FFD700;
+	border: #13E8E9 3px solid;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
   }
   
@@ -3685,12 +3751,12 @@ p {
   .tile-text p {
 	margin: 0;
 	font-size: 0.9em;
-	color: #666;
+	color: rgb(245, 245, 245);
   }
 
   .tile-image {
 	width: 100%;
-	height: 200px;          
+	height: 175px;          
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -3698,12 +3764,16 @@ p {
   }
   
   .tile-image img {
-	width: 100%;            
-	height: auto;
-	object-fit: cover;      
-  }
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
 
-  /* Custom Button Style for GitHub Repository Link */
+.tile-image img:hover {
+    transform: scale(1.1); 
+}
+
 a.special {
 	margin: 0 auto;
 	background-color: #454545;  
@@ -3769,9 +3839,10 @@ html {
 	animation: bounce 2s infinite;
 	z-index: 2;             
   }
-  @media screen and (max-width: 768	px) {
+  @media screen and (max-width: 768px) {
 	.scroll-down {
-	  bottom:20px
+	  bottom: 20px;
+	}
   }
   
   /* Keyframes for the bounce animation */
@@ -3787,25 +3858,21 @@ html {
 	}
   }
 
-  p {
-	color: #ffffff !important;
-	font-size: 1.5em;
-  }
+
 
   .filters button {
 	margin: 0 5px;
-	padding: 8px 16px;
+	padding: 8px 8px;
 	border: none;
-	background: #eee;
-	color: #333;
+	background-color: transparent;
+	color: black;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: background 0.3s;
+	transition: background 0.2s;
   }
   .filters button.active,
   .filters button:hover {
-	background: #37c0fb;
-	color: white;
+	color: #37c0fb
   }
   .tile-container {
 	display: flex;
@@ -3823,4 +3890,40 @@ html {
 	opacity: 0;
 	transform: scale(0.8);
 	pointer-events: none;
+  }
+  @media (max-width: 600px) {
+	.filters {
+	  display: flex !important; 
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  gap: 10px;
+	  max-width: 400px;
+	  margin: 0 auto;
+	  text-align: unset !important; 
+	}
+  }
+
+  .tile-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+  }
+  
+  .tile-header .line {
+	flex-grow: 1;
+	height: 1px;
+	background-color: #ccc; 
+  }
+  
+  .tool-tag {
+	background-color: #37c0fb; 
+	color: white;
+	padding: 0.3em 1em;
+	border-radius: 20px;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0 1em; 
+	white-space: nowrap;
   }
