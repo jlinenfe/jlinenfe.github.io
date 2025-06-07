@@ -3927,3 +3927,7 @@ html {
 	margin: 0 1em; 
 	white-space: nowrap;
   }
+#nav a {
+  font-size: 18px;  /* Or any size you want */
+  font-weight: bold;
+}
