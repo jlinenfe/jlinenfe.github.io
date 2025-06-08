@@ -103,10 +103,17 @@
 							<div class="col-4 col-12-narrower">
 								<div id="sidebar">
 									<!-- Sidebar -->
-									<h6>Project Demo</h6>
+									<!-- Clickable Image Modal -->
+<h6>Project Demo</h6>
 <section>
-	<img src="assets/css/images/gnbf_demo.png" alt="GNBF Demo" style="width:100%;">
+  <img id="gnbfImg" src="assets/css/images/gnbf_demo.png" alt="GNBF Demo" style="width:100%; cursor:pointer;">
 </section>
+
+<!-- Modal structure -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgFull">
+</div>
 									<h6>Technologies Used</h6>
 									<p><b>Data Handling Environments:</b>Rstudio & Excel</p>
 									<p><b>Languages: </b>  R programming</p>
