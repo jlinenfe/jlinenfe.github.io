@@ -148,19 +148,21 @@
 			}
 			});
 		</script>
-		<!-- JS for image modal -->
+<!-- JS for image modal (for all images) -->
 <script>
   const modal = document.getElementById("imgModal");
-  const img = document.getElementById("gnbfImg");
   const modalImg = document.getElementById("imgFull");
-  const span = document.getElementsByClassName("close")[0];
+  const closeBtn = document.getElementsByClassName("close")[0];
 
-  img.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-  };
+  document.querySelectorAll('.clickable-img').forEach(img => {
+    img.style.cursor = 'pointer'; // sets pointer cursor
+    img.addEventListener('click', function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
 
-  span.onclick = function () {
+  closeBtn.onclick = function () {
     modal.style.display = "none";
   };
 </script>
