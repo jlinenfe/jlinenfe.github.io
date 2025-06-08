@@ -3931,7 +3931,7 @@ nav#nav a {
   font-size: 18px !important;
   font-weight: bold !important;
 }
-.tech-stack {
-  font-size: 18px; /* Adjust as needed */
+.tech-stack-list ul li {
+  font-size: 18px;  /* or your preferred size */
   line-height: 1.6;
 }
