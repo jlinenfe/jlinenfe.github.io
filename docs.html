@@ -1,4 +1,4 @@
-enti<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
   <head>
     <title>Credentials</title>
@@ -11,13 +11,15 @@ enti<!DOCTYPE HTML>
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+        justify-content: center; /* This helps center the content within the container */
       }
       .sidebar {
         flex: 1 1 250px;
-        max-width: 300px;
-        background: #cfcfcf;
+        /* Removed max-width to allow for more flexible centering */
+        /* background: #cfcfcf; */ /* REMOVED: This line removed the grey background */
         padding: 1rem;
         border-radius: 10px;
+        margin: 0 1rem; /* Added margin to push sidebars to left and right */
       }
       .main-content {
         flex: 2 1 500px;
@@ -26,17 +28,18 @@ enti<!DOCTYPE HTML>
       @media (max-width: 768px) {
         .layout-container {
           flex-direction: column;
+          align-items: center; /* Centers items vertically when stacked */
         }
         .sidebar, .main-content {
           max-width: 100%;
+          margin: 0; /* Remove horizontal margin when stacked */
         }
       }
     </style>
-  </head>
+    </head>
   <body class="is-preload">
     <div id="page-wrapper">
 
-      <!-- Header -->
       <div id="header">
         <nav id="nav">
           <ul>
@@ -48,11 +51,9 @@ enti<!DOCTYPE HTML>
         </nav>
       </div>
 
-      <!-- Main -->
       <section class="wrapper style1">
         <div class="container layout-container">
 
-          <!-- Left Sidebar -->
           <aside id="sidebar1" class="sidebar">
             <div class="tile">
               <h4>Resume</h4>
@@ -71,7 +72,6 @@ enti<!DOCTYPE HTML>
             </div>
           </aside>
 
-          <!-- Main Content -->
           <main id="content" class="main-content">
             <article>
               <span class="image center"><img src="assets/mangs_image.jpg" alt="" /></span>
@@ -84,7 +84,6 @@ enti<!DOCTYPE HTML>
             </article>
           </main>
 
-          <!-- Right Sidebar -->
           <aside id="sidebar2" class="sidebar">
             <div class="tile">
               <h4>Certifications</h4>
@@ -106,7 +105,6 @@ enti<!DOCTYPE HTML>
         </div>
       </section>
 
-      <!-- Footer -->
       <div id="footer">
         <div class="container">
           <div class="row">
@@ -135,7 +133,6 @@ enti<!DOCTYPE HTML>
           </div>
         </div>
 
-        <!-- Icons -->
         <section id="footer">
           <ul class="icons black-icons">
             <li><a href="https://github.com/Harrisinho17" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -147,7 +144,6 @@ enti<!DOCTYPE HTML>
 
     </div>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
