@@ -3968,4 +3968,33 @@ nav#nav a {
     cursor: pointer;
   }
 </style>
+/* ===================
+   Custom Layout Fixes
+   =================== */
+
+.row {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent columns from stacking */
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Make columns responsive */
+.col-3 {
+  flex: 0 0 20%;
+  min-width: 180px; /* Prevent sidebar cramping */
+}
+
+.col-6 {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+/* Prevent overly wide content */
+.tile img,
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
