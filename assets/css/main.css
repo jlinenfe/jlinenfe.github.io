@@ -3979,14 +3979,18 @@ nav#nav a {
 /* Left and right sidebar styling */
 .sidebar {
   flex: 1 1 20%;
-  /* background-color: #cfcfcf; */ /* Comment this line out */
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  /* background-color: #cfcfcf; */ /* This is already commented out, good! */
+  /* Remove or adjust padding based on if you want internal spacing without a box */
+  padding: 0; /* Set padding to 0 if you want the content flush with the edge */
+  /* Remove border-radius and box-shadow to eliminate the box appearance */
+  /* border-radius: 10px; */ /* COMMENT THIS OUT */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); */ /* COMMENT THIS OUT */
 }
 
 .main-content {
   flex: 1 1 55%;
+  /* You might want to remove padding here too if you want it to appear borderless */
+  padding: 0; /* Consider setting to 0 if main content also needs to blend */
 }
 
 /* Stack everything vertically on screens smaller than 768px */
@@ -3994,6 +3998,9 @@ nav#nav a {
   .sidebar,
   .main-content {
     flex: 1 1 100%;
+    /* Keep padding here if you want internal spacing on mobile */
+    padding: 0; /* Or adjust this for mobile spacing */
+    box-sizing: border-box; /* Good to keep for responsive widths */
   }
 }
 
