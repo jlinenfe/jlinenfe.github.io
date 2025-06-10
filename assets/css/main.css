@@ -3968,55 +3968,42 @@ nav#nav a {
     cursor: pointer;
   }
 </style>
-/* Responsive Flex Layout */
-.row.gtr-200 {
-  display: flex;
-  flex-wrap: nowrap;
+
+/* 💪 Force Flex Row */
+.wrapper .container .row.gtr-200 {
+  display: flex !important;
+  flex-wrap: nowrap !important;
   justify-content: space-between;
   gap: 1.5rem;
-  align-items: flex-start;
 }
 
-/* Columns */
-.col-3 {
-  flex: 0 0 20%;
-  min-width: 180px;
-  box-sizing: border-box;
+/* 💪 Force Column Behavior */
+.wrapper .container .row.gtr-200 > .col-3,
+.wrapper .container .row.gtr-200 > .col-6 {
+  flex: 1 1 auto !important;
+  box-sizing: border-box !important;
+  min-width: 200px !important;
+  width: auto !important;
+  max-width: 100%;
 }
 
-.col-6 {
-  flex: 1 1 auto;
-  min-width: 300px;
-  box-sizing: border-box;
-}
-
-#sidebar1, #sidebar2, #content {
-  width: 100%;
-}
-
-/* Images inside tiles scale properly */
+/* Images auto-scale */
 .tile img,
 .image img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Prevent horizontal scroll */
-body, html {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-/* Fallback for very small screens */
+/* Mobile fallback: stack */
 @media screen and (max-width: 768px) {
-  .row.gtr-200 {
-    flex-wrap: wrap;
+  .wrapper .container .row.gtr-200 {
+    flex-wrap: wrap !important;
   }
 
-  .col-3, .col-6 {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .wrapper .container .row.gtr-200 > .col-3,
+  .wrapper .container .row.gtr-200 > .col-6 {
+    flex: 1 1 100% !important;
   }
 }
 
