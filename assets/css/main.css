@@ -3979,7 +3979,7 @@ nav#nav a {
 /* Left and right sidebar styling */
 .sidebar {
   flex: 1 1 20%;
-  background-color: #cfcfcf;
+  /* background-color: #cfcfcf; */ /* Comment this line out */
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
