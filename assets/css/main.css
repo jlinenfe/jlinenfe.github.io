@@ -4010,5 +4010,10 @@ nav#nav a {
     flex: 1 1 100% !important;
   }
 }
+.wrapper .container .row.gtr-200 > .col-3:first-child {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
 
 
