@@ -6,42 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <style>
+   <style>
   .layout-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1rem; /* You have 2rem gap in main.css, make sure this is consistent if desired */
     justify-content: center; /* This helps center the content within the container */
   }
+  /* Remove the .sidebar rule from here completely if it's now handled by main.css */
+  /*
   .sidebar {
     flex: 1 1 250px;
-    /* Removed max-width to allow for more flexible centering */
-    /* background: #cfcfcf; */ /* REMOVED: This line removed the grey background */
-    padding: 1rem; /* Default padding for larger screens */
+    padding: 1rem;
     border-radius: 10px;
-    margin: 0 1rem; /* Added margin to push sidebars to left and right on larger screens */
+    margin: 0 1rem;
   }
+  */
   .main-content {
-    flex: 2 1 500px;
+    flex: 2 1 500px; /* Note: main.css has 1 1 55% for main-content */
     min-width: 300px;
-    /* Add padding here too if your main content also has content pushed right */
     padding: 1rem; /* Consistent padding for main content */
   }
   @media (max-width: 768px) {
     .layout-container {
       flex-direction: column;
       align-items: center; /* Centers items horizontally when stacked */
-      /* No horizontal padding/margin needed here if items themselves handle it */
     }
     .sidebar, .main-content {
-      max-width: 100%; /* Ensures they take full available width */
-      margin: 0; /* Remove horizontal margin when stacked */
-      /* Adjust padding for mobile screens */
-      padding: 0rem; /* Reduce padding on smaller screens */
-      box-sizing: border-box; /* Crucial: Ensures padding is included in the element's total width */
+      max-width: 100%;
+      margin: 0;
+      padding: 0rem; /* Adjusted for mobile */
+      box-sizing: border-box;
     }
-    /* If you find the entire content is still off, you might add */
-    /* padding-left: 1rem; padding-right: 1rem; to a body or wrapper if necessary */
   }
 </style>
     </head>
