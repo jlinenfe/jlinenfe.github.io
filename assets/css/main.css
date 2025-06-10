@@ -2816,8 +2816,7 @@ input, select, textarea {
 				}
 		/* Sidebar */
 #sidebar {
-	background-color: #cfcfcf; 
-	padding: 2em;
+/* background-color: #cfcfcf; */ /* If you want to comment it out */	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   }
