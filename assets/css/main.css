@@ -3968,33 +3968,56 @@ nav#nav a {
     cursor: pointer;
   }
 </style>
-/* ===================
-   Custom Layout Fixes
-   =================== */
-
-.row {
+/* Responsive Flex Layout */
+.row.gtr-200 {
   display: flex;
-  flex-wrap: nowrap; /* Prevent columns from stacking */
+  flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
-/* Make columns responsive */
+/* Columns */
 .col-3 {
   flex: 0 0 20%;
-  min-width: 180px; /* Prevent sidebar cramping */
+  min-width: 180px;
+  box-sizing: border-box;
 }
 
 .col-6 {
-  flex: 1 1 60%;
+  flex: 1 1 auto;
   min-width: 300px;
+  box-sizing: border-box;
 }
 
-/* Prevent overly wide content */
+#sidebar1, #sidebar2, #content {
+  width: 100%;
+}
+
+/* Images inside tiles scale properly */
 .tile img,
 .image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
+
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Fallback for very small screens */
+@media screen and (max-width: 768px) {
+  .row.gtr-200 {
+    flex-wrap: wrap;
+  }
+
+  .col-3, .col-6 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
