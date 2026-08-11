@@ -1,248 +1,375 @@
-<!-- Header -->
-<div id="header">
-	<nav id="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="About.html">About</a></li>
-			<li class="current"><a href="Projects.html">Projects</a></li>
-			<li><a href="docs.html">Documents</a></li>
-		</ul>
-	</nav>
-</div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Miami Waterkeeper GIS & Data Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li class="current"><a href="Projects.html">Projects</a></li>
+						<li><a href="docs.html">Documents</a></li>
+					</ul>
+				</nav>
+			</div>
 
 
-<!-- Main -->
-<section class="wrapper style1">
-	<div class="container">
-		<div class="row gtr-200">
-			<div class="col-8 col-12-narrower">
-				<div id="content">
+			<!-- Main -->
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="row gtr-200">
 
-					<article>
+						<div class="col-8 col-12-narrower">
+							<div id="content">
 
-						<header>
-							<h2 class="major">
-								<i class="fas fa-map-marked-alt"></i>
-								Miami Waterkeeper GIS & Data Analysis
-							</h2>
-							<hr>
-						</header>
+								<!-- Content -->
+								<article>
 
-
-						<h3>Project Overview</h3>
-
-						<p>
-							In partnership with <b>Miami Waterkeeper</b>, I conducted spatial and data analyses 
-							to help evaluate sanitary sewer overflows and wastewater infrastructure issues 
-							across Miami-Dade County. The project involved compiling and organizing large 
-							environmental datasets, developing GIS-based visualizations, and analyzing the 
-							spatial and temporal distribution of sewage spills to better understand where 
-							incidents were occurring and how patterns changed over time.
-						</p>
-
-						<p>
-							Using <b>GIS, RStudio, and environmental records</b>, I developed maps and analytical 
-							products that transformed complex datasets into clear visual information that could 
-							support research, communication, and organizational decision-making.
-						</p>
+									<header>
+										<h2 class="major">
+											<i class="fas fa-map-marked-alt"></i>
+											Miami Waterkeeper GIS & Data Analysis
+										</h2>
+										<hr>
+									</header>
 
 
-						<hr>
+									<span class="image center">
+										<img src="assets/logo_MWK_FULL.jpg" alt="Miami Waterkeeper" />
+									</span>
 
 
-						<h3>Background</h3>
-
-						<p>
-							Sanitary sewer overflows can release untreated or partially treated wastewater into 
-							streets, waterways, and surrounding environments, creating potential risks to water 
-							quality and public health. Understanding where these events occur, how frequently they 
-							occur, and whether persistent geographic patterns exist can help organizations identify 
-							areas of concern and communicate infrastructure challenges to stakeholders.
-						</p>
-
-						<p>
-							This project brought together historical sewer spill records and spatial information 
-							to examine wastewater-related incidents across Miami-Dade County and place individual 
-							events within a broader geographic and historical context.
-						</p>
-
-
-						<hr>
-
-
-						<h3>Objective</h3>
-
-						<p>
-							The primary objective of this project was to use <b>data analytics and GIS</b> to 
-							organize, visualize, and evaluate historical sanitary sewer overflow information. 
-							Specific objectives included:
-						</p>
-
-						<ul style="font-size: 1.15em; line-height: 1.6;">
-							<li>Compile and clean historical sanitary sewer overflow records from multiple datasets</li>
-
-							<li>Map the geographic distribution of reported sewage spills across Miami-Dade County</li>
-
-							<li>Evaluate changes in spill occurrence and distribution through time</li>
-
-							<li>Compare spill locations with relevant wastewater infrastructure and regulatory boundaries</li>
-
-							<li>Develop maps and visualizations that clearly communicate complex environmental data</li>
-
-							<li>Provide Miami Waterkeeper with analytical products that could support research, outreach, and future investigations</li>
-						</ul>
-
-
-						<hr>
-
-
-						<h3>Methods & Tools</h3>
-
-						<p>
-							The analysis combined <b>data cleaning, spatial analysis, GIS mapping, and visualization</b>. 
-							Historical records were standardized and organized before being joined with geographic 
-							information to allow individual incidents to be mapped and compared across space and time.
-						</p>
-
-						<p>
-							Spatial products were developed using GIS, while additional data processing and analysis 
-							were performed in <b>RStudio</b>. The resulting workflow allowed large tabular datasets 
-							to be converted into interpretable maps and figures that highlighted geographic patterns 
-							and areas warranting further investigation.
-						</p>
-
-
-						<hr>
-
-
-						<h3>Results Summary</h3>
-
-						<div class="tile-container">
-
-
-							<!-- TILE 1 -->
-							<div class="tile">
-								<div class="tile-text">
-
-									<h5><b>Spatial Distribution of Sewer Overflows</b></h5>
+									<h3>Project Overview</h3>
 
 									<p>
-										Historical sewer overflow records were mapped across Miami-Dade County to 
-										visualize where incidents occurred and identify geographic concentrations 
-										of reported spills. Mapping the dataset provided a clearer view of spatial 
-										patterns that are difficult to recognize from tabular records alone.
+										In this project, I worked with <b>Miami Waterkeeper</b> to analyze historical
+										sanitary sewer overflow and wastewater infrastructure data across Miami-Dade County.
+										The project involved compiling, cleaning, and organizing environmental and spatial
+										datasets from multiple sources and transforming them into maps and analytical
+										products that could be used to better understand patterns in sewage spills and
+										wastewater infrastructure.
 									</p>
 
 									<p>
-										<span class="image fit">
-											<img class="clickable-img"
-												src="assets/css/images/MWK_SSO_MAP.png"
-												alt="Miami-Dade sanitary sewer overflow map" />
-										</span>
+										Using <b>GIS, RStudio, and spatial data analysis</b>, I evaluated the geographic
+										and temporal distribution of sewer overflow events and developed visualizations
+										that placed individual incidents within a broader environmental and regulatory
+										context. The resulting products helped convert large and complex datasets into
+										clear, interpretable information for research, communication, and organizational
+										decision-making.
 									</p>
 
-								</div>
+
+									<hr>
+
+
+									<h3>Background</h3>
+
+									<p>
+										Sanitary sewer overflows can discharge untreated or partially treated wastewater
+										into streets, canals, waterways, and surrounding environments. Historical records
+										of these events contain valuable information about where spills occur, how frequently
+										they occur, and how wastewater-related issues may change over time.
+									</p>
+
+									<p>
+										However, these records often exist across multiple datasets, formats, and geographic
+										sources. Integrating these datasets within a GIS environment provides a way to
+										examine individual incidents in relation to surrounding infrastructure, waterways,
+										regulatory areas, and broader spatial patterns throughout Miami-Dade County.
+									</p>
+
+
+									<hr>
+
+
+									<h3>Scenario</h3>
+
+									<p>
+										Miami Waterkeeper sought to better organize and interpret historical wastewater
+										and sewer overflow information in order to understand several important questions:
+									</p>
+
+									<ul style="font-size: 1.15em; line-height: 1.6;">
+										<li>Where have sanitary sewer overflows occurred throughout Miami-Dade County?</li>
+										<li>How have the frequency and distribution of reported spills changed through time?</li>
+										<li>Are certain geographic areas repeatedly associated with wastewater incidents?</li>
+										<li>How do reported spills relate spatially to wastewater infrastructure and regulatory areas?</li>
+										<li>How can complex wastewater datasets be communicated clearly through maps and visualizations?</li>
+									</ul>
+
+									<p>
+										By compiling the available data and translating it into spatially explicit
+										analytical products, the project provided a clearer framework for examining
+										wastewater issues across the county.
+									</p>
+
+
+									<hr>
+
+
+									<h3>Objective</h3>
+
+									<p>
+										The primary objective of this analysis was to integrate historical wastewater
+										and spatial datasets in order to:
+									</p>
+
+									<ul style="font-size: 1.15em; line-height: 1.6;">
+										<li>Compile and clean historical sanitary sewer overflow records</li>
+										<li>Map the geographic distribution of reported sewer overflow events</li>
+										<li>Evaluate temporal and spatial patterns within the historical dataset</li>
+										<li>Compare spill locations with relevant infrastructure and regulatory information</li>
+										<li>Develop clear maps and visualizations for technical and non-technical audiences</li>
+									</ul>
+
+									<p>
+										Ultimately, the analysis was designed to provide Miami Waterkeeper with
+										organized datasets and visual products that could support research,
+										communication, outreach, and future environmental investigations.
+									</p>
+
+
+									<hr>
+
+
+									<h3>Results Summary</h3>
+
+									<div class="tile-container">
+
+
+										<!-- RESULT TILE 1 -->
+										<div class="tile">
+											<div class="tile-text">
+
+												<h5><b>Spatial Distribution of Sewer Overflows</b></h5>
+
+												<p>
+													Historical sanitary sewer overflow records were mapped across
+													<b>Miami-Dade County</b> to visualize the geographic distribution
+													of reported incidents. Converting the historical records into a
+													spatial dataset allowed individual events to be examined within
+													the broader landscape and made geographic patterns easier to
+													identify than from tabular data alone.
+												</p>
+
+												<p>&nbsp;</p>
+
+												<p>
+													<span class="image fit">
+														<img class="clickable-img"
+															src="assets/css/images/MWK_SSO_MAP.png"
+															alt="Miami-Dade sanitary sewer overflow map" />
+													</span>
+												</p>
+
+											</div>
+										</div>
+
+
+										<!-- RESULT TILE 2 -->
+										<div class="tile">
+											<div class="tile-text">
+
+												<h5><b>Historical Spill Trends</b></h5>
+
+												<p>
+													Organizing sewer overflow records through time allowed historical
+													changes in <b>spill occurrence and distribution</b> to be evaluated.
+													This temporal perspective helped distinguish individual events from
+													longer-term patterns and provided additional context for understanding
+													how reported wastewater incidents have changed across the historical
+													record.
+												</p>
+
+												<p>&nbsp;</p>
+
+												<p>
+													Additional analysis of event frequency, spill magnitude, or other
+													available metrics can help identify periods of elevated wastewater
+													activity and provide context for interpreting changing infrastructure
+													and management conditions.
+												</p>
+
+												<p>&nbsp;</p>
+
+												<p>
+													<span class="image fit">
+														<img class="clickable-img"
+															src="assets/css/images/MWK_SSO_TIMELINE.png"
+															alt="Historical sanitary sewer overflow trends" />
+													</span>
+												</p>
+
+											</div>
+										</div>
+
+
+										<!-- RESULT TILE 3 -->
+										<div class="tile">
+											<div class="tile-text">
+
+												<h5><b>Infrastructure & Regulatory Context</b></h5>
+
+												<p>
+													Spatial analysis allowed reported sewer overflow locations to be
+													compared with <b>wastewater infrastructure and regulatory information</b>.
+													Placing spill records within this broader geographic framework provided
+													additional context for understanding where incidents occurred and how
+													they relate to the systems and management areas surrounding them.
+												</p>
+
+												<p>&nbsp;</p>
+
+												<p>
+													The resulting GIS products transformed complex wastewater datasets
+													into accessible visual information that could support additional
+													investigation, stakeholder communication, and future spatial analyses.
+												</p>
+
+												<p>&nbsp;</p>
+
+												<p>
+													<span class="image fit">
+														<img class="clickable-img"
+															src="assets/css/images/MWK_CONSENT_DECREE_MAP.png"
+															alt="Miami-Dade wastewater infrastructure and regulatory analysis" />
+													</span>
+												</p>
+
+											</div>
+										</div>
+
+									</div>
+
+								</article>
+
 							</div>
-
-
-							<!-- TILE 2 -->
-							<div class="tile">
-								<div class="tile-text">
-
-									<h5><b>Historical & Temporal Analysis</b></h5>
-
-									<p>
-										Organizing the historical dataset by year allowed changes in sewage spill 
-										activity to be evaluated through time. This provided additional context for 
-										determining whether observed incidents represented isolated events or were 
-										part of longer-term patterns within the wastewater system.
-									</p>
-
-									<p>
-										<span class="image fit">
-											<img class="clickable-img"
-												src="assets/css/images/MWK_SSO_TIMELINE.png"
-												alt="Historical sanitary sewer overflow trends" />
-										</span>
-									</p>
-
-								</div>
-							</div>
-
-
-							<!-- TILE 3 -->
-							<div class="tile">
-								<div class="tile-text">
-
-									<h5><b>Regulatory & Infrastructure Context</b></h5>
-
-									<p>
-										Spatial datasets were also compared with relevant wastewater infrastructure 
-										and regulatory information to place reported incidents within the broader 
-										management landscape. This helped connect individual spill records with the 
-										systems and geographic areas in which they occurred.
-									</p>
-
-									<p>
-										<span class="image fit">
-											<img class="clickable-img"
-												src="assets/css/images/MWK_CONSENT_DECREE_MAP.png"
-												alt="Miami-Dade wastewater regulatory and infrastructure map" />
-										</span>
-									</p>
-
-								</div>
-							</div>
-
-
-							<!-- TILE 4 -->
-							<div class="tile">
-								<div class="tile-text">
-
-									<h5><b>Applied GIS & Data Communication</b></h5>
-
-									<p>
-										A major component of the project involved converting complex environmental 
-										and infrastructure datasets into accessible maps and visualizations. These 
-										products provided Miami Waterkeeper with tools for communicating spatial 
-										patterns, supporting additional analyses, and identifying questions for 
-										future investigation.
-									</p>
-
-									<p>
-										<span class="image fit">
-											<img class="clickable-img"
-												src="assets/css/images/MWK_FINAL_MAP.png"
-												alt="Miami Waterkeeper GIS analysis" />
-										</span>
-									</p>
-
-								</div>
-							</div>
-
-
 						</div>
 
 
-						<hr>
+						<!-- Sidebar -->
+						<div class="col-4 col-12-narrower">
+							<div id="sidebar">
+
+								<!-- Clickable Image Modal -->
+
+								<h6>Project Demo</h6>
+
+								<section>
+									<img class="clickable-img"
+										src="assets/css/images/MWK_DEMO.png"
+										alt="Miami Waterkeeper Project Demo"
+										style="width:100%; cursor:pointer;">
+								</section>
 
 
-						<h3>Project Significance</h3>
-
-						<p>
-							This project demonstrates how <b>GIS, data analytics, and environmental datasets</b> 
-							can be integrated to support nonprofit and organizational decision-making. By converting 
-							large historical datasets into spatially explicit information, the analysis provided a 
-							more intuitive way to explore wastewater infrastructure issues and communicate patterns 
-							to both technical and non-technical audiences.
-						</p>
+								<!-- Modal structure -->
+								<div id="imgModal" class="modal">
+									<span class="close">&times;</span>
+									<img class="modal-content" id="imgFull">
+								</div>
 
 
-					</article>
+								<h6>Technologies Used</h6>
 
+								<p><b>Data Handling Environments:</b> RStudio & Excel</p>
+
+								<p><b>Languages:</b> R Programming</p>
+
+								<p><b>Visualization Tools:</b> GIS, RStudio & PowerPoint</p>
+
+								<p><b>Spatial Analysis:</b> ArcGIS / QGIS</p>
+
+								<p><b>Version Control:</b> Git & GitHub</p>
+
+
+								<h6>Dataset Information</h6>
+
+								<p>
+									<b>Source:</b> Historical Miami-Dade sanitary sewer overflow records,
+									wastewater infrastructure datasets, regulatory spatial data, and supporting
+									environmental GIS layers.
+								</p>
+
+								<p>
+									<b>Description:</b> This analysis draws from multiple wastewater and spatial
+									datasets compiled to examine the location, timing, and geographic context of
+									sanitary sewer overflow events across Miami-Dade County. Records were cleaned,
+									organized, and integrated with GIS layers to support spatial analysis,
+									visualization, and interpretation of historical wastewater patterns.
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Footer -->
+			<div id="footer">
 			</div>
-		</div>
-	</div>
-</div>
 
-</section>
+		</div>
+
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var titleBarTitle = document.querySelector("#titleBar .title");
+
+				if (
+					titleBarTitle &&
+					(titleBarTitle.textContent === "undefined" ||
+					titleBarTitle.textContent.trim() === "")
+				) {
+					titleBarTitle.textContent = "";
+				}
+			});
+		</script>
+
+
+		<!-- JS for image modal (for all images) -->
+		<script>
+
+			const modal = document.getElementById("imgModal");
+			const modalImg = document.getElementById("imgFull");
+			const closeBtn = document.getElementsByClassName("close")[0];
+
+			document.querySelectorAll('.clickable-img').forEach(img => {
+
+				img.style.cursor = 'pointer';
+
+				img.addEventListener('click', function () {
+					modal.style.display = "block";
+					modalImg.src = this.src;
+				});
+
+			});
+
+			closeBtn.onclick = function () {
+				modal.style.display = "none";
+			};
+
+		</script>
+
+	</body>
+</html>
