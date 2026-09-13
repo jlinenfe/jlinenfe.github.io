@@ -1,873 +1,1056 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <title>Global Climate Change Analysis</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+
+	<title>Global Climate Change Analysis</title>
+
+	<meta charset="utf-8" />
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
+
+	<link
+		rel="stylesheet"
+		href="assets/css/main.css"
+	/>
+
 </head>
+
 
 <body class="is-preload">
 
-    <div id="page-wrapper">
-
-        <!-- Header -->
-        <div id="header">
-
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li class="current"><a href="Projects.html">Projects</a></li>
-                    <li><a href="docs.html">Credentials</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
-
-        <!-- Main -->
-        <section class="wrapper style1">
+	<div id="page-wrapper">
 
-            <div class="container">
-
-                <div class="row gtr-200">
 
-                    <!-- Main Content -->
-                    <div class="col-8 col-12-narrower">
-
-                        <div id="content">
-
-                           <article>
-
-    <header>
-        <h2 class="major">
-            <i class="fas fa-globe-americas"></i>
-            Global Climate Change Analysis
-        </h2>
-        <hr>
-    </header>
-
-
-    <!-- Project Overview with circular image -->
-    <div style="
-        display: flex;
-        align-items: flex-start;
-        gap: 25px;
-        margin-bottom: 30px;
-    ">
+		<!-- =========================================================
+		     HEADER
+		========================================================== -->
 
-        <!-- Circular image -->
-        <div style="
-            width: 32%;
-            max-width: 255px;
-            flex-shrink: 0;
-        ">
+		<div id="header">
 
-            <img
-                src="assets/css/images/climate_change_project.png"
-                alt="Global Climate Change Analysis"
-                style="
-                    width: 100%;
-                    aspect-ratio: 1 / 1;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    display: block;
-                "
-            />
-
-        </div>
-
-
-        <!-- Overview -->
-        <div style="
-            flex: 1;
-            min-width: 0;
-        ">
+			<nav id="nav">
 
-            <h3>Project Overview</h3>
+				<ul>
 
-            <p>
-                Climate change is often discussed through individual indicators:
-                atmospheric carbon dioxide, global temperature, melting ice,
-                or rising sea level. This project was developed to examine these
-                indicators together and evaluate how the major components of the
-                modern climate record have changed through time.
-            </p>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
 
-            <p>
-                Using publicly available observational datasets, I analyzed
-                long-term carbon dioxide emissions, global temperature anomalies,
-                global sea level, and satellite-era measurements of mass loss from
-                the Greenland and Antarctic ice sheets.
-            </p>
-
-            <p>
-                Rather than treating each dataset as an isolated trend, the analysis
-                follows the progression of the climate system from increasing
-                greenhouse-gas emissions to warming, loss of land-based ice, and
-                rising global sea level.
-            </p>
-
-        </div>
+					<li>
+						<a href="About.html">About</a>
+					</li>
 
-    </div>
+					<li class="current">
+						<a href="Projects.html">Projects</a>
+					</li>
 
-    <hr>
+					<li>
+						<a href="docs.html">Documents</a>
+					</li>
 
-                                <!-- =====================================================
-                                     QUESTIONS
-                                ====================================================== -->
+				</ul>
 
-                                <h3>Questions</h3>
+			</nav>
 
-                                <p>
-                                    The analysis was organized around several related questions:
-                                </p>
+		</div>
 
-                                <ul>
 
-                                    <li>
-                                        How have global carbon dioxide emissions changed since the
-                                        beginning of the modern industrial era?
-                                    </li>
 
-                                    <li>
-                                        How has Earth's average surface temperature changed over the
-                                        same period?
-                                    </li>
+		<!-- =========================================================
+		     MAIN
+		========================================================== -->
 
-                                    <li>
-                                        Has global sea level changed alongside the observed warming?
-                                    </li>
+		<section class="wrapper style1">
 
-                                    <li>
-                                        How much ice are Greenland and Antarctica currently losing?
-                                    </li>
+			<div class="container">
 
-                                    <li>
-                                        Has the rate of ice-sheet loss changed through time?
-                                    </li>
+				<div class="row gtr-200">
 
-                                    <li>
-                                        How much measurable sea-level rise has recent ice-sheet loss
-                                        contributed to the world's oceans?
-                                    </li>
 
-                                </ul>
+					<!-- =================================================
+					     MAIN CONTENT
+					================================================== -->
 
+					<div class="col-8 col-12-narrower">
 
-                                <!-- =====================================================
-                                     ANALYTICAL APPROACH
-                                ====================================================== -->
+						<div id="content">
 
-                                <h3>Analytical Approach</h3>
 
-                                <p>
-                                    Multiple datasets covering different components of Earth's climate
-                                    system were cleaned, organized, analyzed, and visualized in R.
-                                    Long-term records beginning near 1880 were first used to examine
-                                    changes in global carbon dioxide emissions, temperature, and sea
-                                    level.
-                                </p>
+							<article>
 
-                                <p>
-                                    The analysis was then narrowed to the satellite era to investigate
-                                    changes in the Greenland and Antarctic ice sheets using IMBIE mass
-                                    balance estimates from 1992–2020. Annual ice loss was compared
-                                    through time and converted to sea-level equivalent to quantify how
-                                    much water these losses added to the global ocean.
-                                </p>
 
+								<!-- =========================================
+								     PROJECT TITLE
+								========================================== -->
 
-                                <!-- =====================================================
-                                     QUESTION 1
-                                ====================================================== -->
+								<header>
 
-                                <hr>
+									<h2 class="major">
 
-                                <h3>1. How Have Global CO₂ Emissions Changed?</h3>
+										<i class="fas fa-globe-americas"></i>
 
-                                <p>
-                                    The first part of the analysis examined the human driver underlying
-                                    modern climate change: carbon dioxide emissions from fossil-fuel use
-                                    and industrial activity.
-                                </p>
+										Global Climate Change Analysis
 
-                                <p>
-                                    Global emissions increased substantially following industrialization,
-                                    with the most rapid growth occurring after the middle of the
-                                    twentieth century. The long-term record shows that annual emissions
-                                    increased by roughly <b>34,300 million tonnes between 1880 and the
-                                    modern period represented in the dataset</b>.
-                                </p>
+									</h2>
 
-                                <p>
-                                    Carbon dioxide is a greenhouse gas. Increasing its concentration in
-                                    the atmosphere reduces the amount of outgoing heat that escapes to
-                                    space, altering Earth's energy balance and producing warming.
-                                </p>
+									<hr>
 
+								</header>
 
-                                <p>
 
-                                    <span class="image fit">
 
-                                        <img
-                                            class="clickable-img"
-                                            src="assets/css/images/climate_co2_emissions.png"
-                                            alt="Global carbon dioxide emissions since 1880"
-                                        />
+								<!-- =========================================
+								     PROJECT OVERVIEW
+								========================================== -->
 
-                                    </span>
+								<div
+									style="
+										display:flex;
+										align-items:flex-start;
+										flex-wrap:wrap;
+										gap:25px;
+										margin-bottom:30px;
+									"
+								>
 
-                                </p>
 
+									<!-- Circular image -->
 
-                                <!-- =====================================================
-                                     QUESTION 2
-                                ====================================================== -->
+									<div
+										style="
+											width:32%;
+											max-width:255px;
+											min-width:210px;
+											flex-shrink:0;
+										"
+									>
 
-                                <hr>
+										<img
+											src="assets/css/images/climate_image.png"
+											alt="Global Climate Change Analysis"
+											style="
+												width:100%;
+												aspect-ratio:1 / 1;
+												object-fit:cover;
+												border-radius:50%;
+												display:block;
+											"
+										/>
 
-                                <h3>2. Has Global Temperature Increased?</h3>
+									</div>
 
-                                <p>
-                                    The next question was whether the observational temperature record
-                                    shows a corresponding long-term change in Earth's average surface
-                                    temperature.
-                                </p>
 
-                                <p>
-                                    NASA GISTEMP data show a clear increase in global temperature over
-                                    the period analyzed. Relative to conditions near the beginning of
-                                    the record, Earth's average surface temperature has increased by
-                                    approximately <b>1.2°C</b>.
-                                </p>
 
-                                <p>
-                                    The time series also illustrates an important distinction between
-                                    short-term variability and long-term climate change. Individual
-                                    years move above and below the surrounding trend, but the longer
-                                    record shows persistent warming, with the strongest increases
-                                    occurring during recent decades.
-                                </p>
+									<!-- Overview text -->
 
+									<div
+										style="
+											flex:1 1 350px;
+											min-width:0;
+										"
+									>
 
-                                <p>
+										<h3>Project Overview</h3>
 
-                                    <span class="image fit">
+										<p>
+											Climate change is often discussed through individual indicators:
+											carbon dioxide emissions, global temperature, melting ice, or
+											rising sea level. This project examines these indicators together
+											to understand how major components of Earth's climate system have
+											changed through time.
+										</p>
 
-                                        <img
-                                            class="clickable-img"
-                                            src="assets/css/images/climate_global_temperature.png"
-                                            alt="Global temperature anomaly since 1880"
-                                        />
+										<p>
+											Using publicly available observational datasets, I analyzed
+											long-term carbon dioxide emissions, global temperature anomalies,
+											global sea level, and satellite-era measurements of mass loss
+											from the Greenland and Antarctic ice sheets.
+										</p>
 
-                                    </span>
+										<p>
+											Rather than treating each dataset as an isolated trend, the
+											analysis follows the progression from increasing greenhouse-gas
+											emissions to warming, loss of land-based ice, and rising global
+											sea level.
+										</p>
 
-                                </p>
+									</div>
 
+								</div>
 
-                                <!-- =====================================================
-                                     QUESTION 3
-                                ====================================================== -->
 
-                                <hr>
 
-                                <h3>3. Has Global Sea Level Also Changed?</h3>
+								<hr>
 
-                                <p>
-                                    Because warming affects both ocean temperature and land-based ice,
-                                    the next analysis examined the long-term global sea-level record.
-                                </p>
 
-                                <p>
-                                    The combined CSIRO and NOAA record shows approximately
-                                    <b>246 millimeters — nearly 10 inches — of global sea-level rise
-                                    since 1880</b>.
-                                </p>
 
-                                <p>
-                                    Global sea level rises primarily through two processes associated
-                                    with warming: seawater expands as it warms, and water previously
-                                    stored in land-based glaciers and ice sheets enters the ocean as
-                                    those ice masses lose mass.
-                                </p>
+								<!-- =========================================
+								     QUESTIONS
+								========================================== -->
 
-                                <p>
-                                    Unlike short-term fluctuations in weather or local water level,
-                                    global mean sea-level change represents a long-term shift in the
-                                    volume and physical state of the world's oceans.
-                                </p>
+								<h3>Questions</h3>
 
+								<p>
+									The project was organized around several related questions:
+								</p>
 
-                                <p>
 
-                                    <span class="image fit">
+								<ul style="font-size:1.05em; line-height:1.6;">
 
-                                        <img
-                                            class="clickable-img"
-                                            src="assets/css/images/climate_global_sea_level.png"
-                                            alt="Global sea-level change since 1880"
-                                        />
+									<li>
+										How have global carbon dioxide emissions changed since the
+										beginning of the modern industrial era?
+									</li>
 
-                                    </span>
+									<li>
+										How has Earth's average surface temperature changed over the
+										same period?
+									</li>
 
-                                </p>
+									<li>
+										Has global sea level changed alongside the observed warming?
+									</li>
 
+									<li>
+										How much ice are Greenland and Antarctica losing?
+									</li>
 
-                                <!-- =====================================================
-                                     TRANSITION TO ICE SHEETS
-                                ====================================================== -->
+									<li>
+										Has the rate of ice-sheet loss changed through time?
+									</li>
 
-                                <hr>
+									<li>
+										How much measurable sea-level rise has recent ice-sheet loss
+										contributed to the ocean?
+									</li>
 
-                                <h3>Where Is Some of That Additional Water Coming From?</h3>
+								</ul>
 
-                                <p>
-                                    The long-term records establish three major changes occurring during
-                                    the modern period: rapidly increasing carbon dioxide emissions,
-                                    rising global temperature, and rising global sea level.
-                                </p>
 
-                                <p>
-                                    The next step was to examine one specific physical pathway connecting
-                                    warming to higher oceans: the loss of land-based ice from
-                                    <b>Greenland and Antarctica</b>.
-                                </p>
 
-                                <p>
-                                    Unlike floating sea ice, loss of land-based ice adds water that was
-                                    previously stored on land directly to the ocean. Greenland and
-                                    Antarctica therefore represent two of the most important components
-                                    of long-term sea-level change.
-                                </p>
+								<hr>
 
 
-                                <!-- =====================================================
-                                     QUESTION 4
-                                ====================================================== -->
 
-                                <h3>4. Are Greenland and Antarctica Losing More Ice?</h3>
+								<!-- =========================================
+								     ANALYTICAL APPROACH
+								========================================== -->
 
-                                <p>
-                                    IMBIE satellite-era estimates were used to calculate annualized ice
-                                    loss separately for Greenland and Antarctica between 1992 and 2020.
-                                    Positive values in the figure represent net annual ice loss.
-                                </p>
+								<h3>Analytical Approach</h3>
 
-                                <p>
-                                    Both ice sheets experienced substantial year-to-year variability,
-                                    meaning that ice loss does not increase smoothly every year.
-                                    However, the longer-term pattern shows that losses became much
-                                    greater during the later portion of the record than during much of
-                                    the early 1990s.
-                                </p>
+								<p>
+									Multiple datasets representing different components of Earth's
+									climate system were cleaned, organized, analyzed, and visualized
+									in R. Long-term records beginning near 1880 were first used to
+									examine changes in global carbon dioxide emissions, temperature,
+									and sea level.
+								</p>
 
-                                <p>
-                                    The estimated increase in annual ice loss was approximately
-                                    <b>10.7 gigatonnes per year² for Greenland</b> and
-                                    <b>4.3 gigatonnes per year² for Antarctica</b> over the analyzed
-                                    period.
-                                </p>
+								<p>
+									The analysis was then narrowed to the satellite era to investigate
+									changes in Greenland and Antarctica using IMBIE ice-sheet mass
+									balance estimates from 1992–2020. Annual ice loss was compared
+									through time and translated into sea-level equivalent to evaluate
+									how land-based ice loss contributes to rising oceans.
+								</p>
 
 
-                                <p>
 
-                                    <span class="image fit">
+								<hr>
 
-                                        <img
-                                            class="clickable-img"
-                                            src="assets/css/images/climate_ice_sheet_loss.png"
-                                            alt="Annual Greenland and Antarctic ice-sheet loss"
-                                        />
 
-                                    </span>
 
-                                </p>
+								<!-- =========================================
+								     QUESTION 1
+								========================================== -->
 
+								<h3>
+									1. How Have Global CO₂ Emissions Changed?
+								</h3>
 
-                                <!-- =====================================================
-                                     QUESTION 5
-                                ====================================================== -->
 
-                                <h3>5. How Much Sea-Level Rise Came From These Ice Sheets?</h3>
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
 
-                                <p>
-                                    Ice-mass loss can also be expressed as its equivalent contribution
-                                    to global mean sea level. Combining Greenland and Antarctica makes
-                                    it possible to estimate how much measurable water was added to the
-                                    global ocean by the two major ice sheets.
-                                </p>
 
-                                <p>
-                                    Between <b>1992 and 2020</b>, the combined losses from Greenland and
-                                    Antarctica contributed approximately <b>21 millimeters of cumulative
-                                    global sea-level rise</b>.
-                                </p>
+									<!-- Text -->
 
-                                <p>
-                                    Annual contributions varied substantially, but the cumulative effect
-                                    continued to grow as additional land-based ice was transferred to
-                                    the ocean.
-                                </p>
+									<div style="flex:1 1 300px;">
 
+										<p>
+											The first part of the analysis examined the human driver
+											underlying modern climate change: carbon dioxide emissions
+											from fossil-fuel use and industrial activity.
+										</p>
 
-                                <p>
+										<p>
+											Global emissions increased substantially following
+											industrialization, with particularly rapid growth occurring
+											after the middle of the twentieth century.
+										</p>
 
-                                    <span class="image fit">
+										<p>
+											The analyzed record shows an increase of approximately
+											<b>34,300 million tonnes of annual CO₂ emissions since 1880</b>.
+										</p>
 
-                                        <img
-                                            class="clickable-img"
-                                            src="assets/css/images/climate_ice_sea_level_contribution.png"
-                                            alt="Annual sea-level contribution from Greenland and Antarctica"
-                                        />
+										<p>
+											Carbon dioxide is a greenhouse gas. Increasing atmospheric
+											CO₂ alters Earth's energy balance by reducing the amount of
+											outgoing heat that escapes to space.
+										</p>
 
-                                    </span>
+									</div>
 
-                                </p>
 
+									<!-- Plot -->
 
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
 
-                                <!-- =====================================================
-                                     RESULTS
-                                ====================================================== -->
+										<img
+											class="clickable-img"
+											src="assets/css/images/climate_co2_emissions.png"
+											alt="Global carbon dioxide emissions since 1880"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
 
-                                <hr>
+									</div>
 
-                                <h3>Results</h3>
+								</div>
 
-                                <p>
-                                    Taken together, the datasets show a connected sequence of changes
-                                    occurring across the modern climate system.
-                                </p>
 
 
-                                <div class="tile-container">
+								<hr>
 
 
-                                    <!-- RESULT 1 -->
 
-                                    <div class="tile">
+								<!-- =========================================
+								     QUESTION 2
+								========================================== -->
 
-                                        <div class="tile-text">
+								<h3>
+									2. Has Global Temperature Increased?
+								</h3>
 
-                                            <h5>
-                                                <b>CO₂ Emissions Increased Dramatically</b>
-                                            </h5>
 
-                                            <p>
-                                                Global carbon dioxide emissions increased by roughly
-                                                <b>34,300 million tonnes</b> from 1880 to the modern
-                                                portion of the analyzed record, with particularly rapid
-                                                growth occurring after the mid-twentieth century.
-                                            </p>
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
 
-                                            <p>&nbsp;</p>
 
-                                            <p>
+									<!-- Plot -->
 
-                                                <span class="image fit">
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
 
-                                                    <img
-                                                        class="clickable-img"
-                                                        src="assets/css/images/climate_co2_emissions.png"
-                                                        alt="Global carbon dioxide emissions"
-                                                    />
+										<img
+											class="clickable-img"
+											src="assets/css/images/climate_global_temperature.png"
+											alt="Global temperature anomaly since 1880"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
 
-                                                </span>
+									</div>
 
-                                            </p>
 
-                                        </div>
 
-                                    </div>
+									<!-- Text -->
 
+									<div style="flex:1 1 300px;">
 
+										<p>
+											The next question was whether the observational temperature
+											record shows a corresponding long-term change in Earth's
+											average surface temperature.
+										</p>
 
-                                    <!-- RESULT 2 -->
+										<p>
+											NASA GISTEMP data show a clear increase in global temperature
+											over the period analyzed.
+										</p>
 
-                                    <div class="tile">
+										<p>
+											Relative to conditions near the beginning of the record,
+											Earth's average temperature has increased by approximately
+											<b>1.2°C since 1880</b>.
+										</p>
 
-                                        <div class="tile-text">
+										<p>
+											Individual years continue to vary, but the longer record
+											reveals persistent warming, with the strongest warming
+											occurring during recent decades.
+										</p>
 
-                                            <h5>
-                                                <b>Global Temperature Increased</b>
-                                            </h5>
+									</div>
 
-                                            <p>
-                                                The global temperature record shows approximately
-                                                <b>1.2°C of warming since 1880</b>, with the strongest
-                                                warming concentrated in recent decades despite
-                                                substantial year-to-year variability.
-                                            </p>
+								</div>
 
-                                            <p>&nbsp;</p>
 
-                                            <p>
 
-                                                <span class="image fit">
+								<hr>
 
-                                                    <img
-                                                        class="clickable-img"
-                                                        src="assets/css/images/climate_global_temperature.png"
-                                                        alt="Global temperature anomaly"
-                                                    />
 
-                                                </span>
 
-                                            </p>
+								<!-- =========================================
+								     QUESTION 3
+								========================================== -->
 
-                                        </div>
+								<h3>
+									3. Has Global Sea Level Also Changed?
+								</h3>
 
-                                    </div>
 
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
 
 
-                                    <!-- RESULT 3 -->
+									<!-- Text -->
 
-                                    <div class="tile">
+									<div style="flex:1 1 300px;">
 
-                                        <div class="tile-text">
+										<p>
+											Because warming affects both ocean temperature and
+											land-based ice, the next analysis examined the long-term
+											global sea-level record.
+										</p>
 
-                                            <h5>
-                                                <b>Global Sea Level Rose</b>
-                                            </h5>
+										<p>
+											The combined CSIRO and NOAA record shows approximately
+											<b>246 millimeters — nearly 10 inches — of global
+											sea-level rise since 1880</b>.
+										</p>
 
-                                            <p>
-                                                The global sea-level record shows approximately
-                                                <b>246 mm — nearly 10 inches — of rise since 1880</b>,
-                                                reflecting the combined influence of ocean thermal
-                                                expansion and the addition of water from melting
-                                                land-based ice.
-                                            </p>
+										<p>
+											Global sea level rises primarily through two processes:
+											thermal expansion of seawater as the ocean warms and the
+											addition of water from melting land-based glaciers and
+											ice sheets.
+										</p>
 
-                                            <p>&nbsp;</p>
+										<p>
+											Unlike short-term fluctuations in local water level,
+											global mean sea-level change represents a long-term shift
+											in the volume and physical state of the world's oceans.
+										</p>
 
-                                            <p>
+									</div>
 
-                                                <span class="image fit">
 
-                                                    <img
-                                                        class="clickable-img"
-                                                        src="assets/css/images/climate_global_sea_level.png"
-                                                        alt="Global sea-level rise"
-                                                    />
 
-                                                </span>
+									<!-- Plot -->
 
-                                            </p>
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
 
-                                        </div>
+										<img
+											class="clickable-img"
+											src="assets/css/images/climate_global_sea_level.png"
+											alt="Global sea level since 1880"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
 
-                                    </div>
+									</div>
 
+								</div>
 
 
-                                    <!-- RESULT 4 -->
 
-                                    <div class="tile">
+								<hr>
 
-                                        <div class="tile-text">
 
-                                            <h5>
-                                                <b>Ice-Sheet Loss Increased</b>
-                                            </h5>
 
-                                            <p>
-                                                Satellite-era observations show that both Greenland and
-                                                Antarctica experienced substantial net ice loss.
-                                                Estimated annual loss increased through the record by
-                                                approximately <b>10.7 Gt/yr² in Greenland</b> and
-                                                <b>4.3 Gt/yr² in Antarctica</b>.
-                                            </p>
+								<!-- =========================================
+								     ICE SHEET TRANSITION
+								========================================== -->
 
-                                            <p>&nbsp;</p>
+								<h3>
+									Where Is Some of That Additional Water Coming From?
+								</h3>
 
-                                            <p>
+								<p>
+									The long-term records show three major changes occurring during
+									the modern period: rapidly increasing carbon dioxide emissions,
+									rising global temperature, and rising global sea level.
+								</p>
 
-                                                <span class="image fit">
+								<p>
+									The next step was to examine one specific physical pathway linking
+									a warmer planet to higher oceans: the loss of land-based ice from
+									<b>Greenland and Antarctica</b>.
+								</p>
 
-                                                    <img
-                                                        class="clickable-img"
-                                                        src="assets/css/images/climate_ice_sheet_loss.png"
-                                                        alt="Greenland and Antarctic ice-sheet loss"
-                                                    />
+								<p>
+									Unlike floating sea ice, land-based ice adds water that was
+									previously stored outside the ocean when it melts or is discharged
+									into the sea.
+								</p>
 
-                                                </span>
 
-                                            </p>
 
-                                        </div>
+								<!-- =========================================
+								     QUESTION 4
+								========================================== -->
 
-                                    </div>
+								<h3>
+									4. Are Greenland and Antarctica Losing More Ice?
+								</h3>
 
 
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
 
-                                    <!-- RESULT 5 -->
 
-                                    <div class="tile">
+									<!-- Plot -->
 
-                                        <div class="tile-text">
+									<div
+										style="
+											flex:0 1 365px;
+											max-width:365px;
+										"
+									>
 
-                                            <h5>
-                                                <b>Ice Loss Is Already Raising the Ocean</b>
-                                            </h5>
+										<img
+											class="clickable-img"
+											src="assets/css/images/climate_ice_sheet_loss.png"
+											alt="Greenland and Antarctic ice-sheet loss"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
 
-                                            <p>
-                                                Greenland and Antarctica together contributed
-                                                approximately <b>21 mm of global mean sea-level rise
-                                                between 1992 and 2020</b>, demonstrating a measurable
-                                                connection between polar land-ice loss and rising oceans.
-                                            </p>
+									</div>
 
-                                            <p>&nbsp;</p>
 
-                                            <p>
 
-                                                <span class="image fit">
+									<!-- Text -->
 
-                                                    <img
-                                                        class="clickable-img"
-                                                        src="assets/css/images/climate_ice_sea_level_contribution.png"
-                                                        alt="Sea-level contribution from ice-sheet loss"
-                                                    />
+									<div style="flex:1 1 290px;">
 
-                                                </span>
+										<p>
+											IMBIE satellite-era estimates were used to calculate
+											annualized ice loss separately for Greenland and Antarctica
+											between 1992 and 2020.
+										</p>
 
-                                            </p>
+										<p>
+											Both ice sheets experienced considerable year-to-year
+											variability, meaning that ice loss does not increase
+											smoothly every year.
+										</p>
 
-                                        </div>
+										<p>
+											However, losses were generally much greater during the later
+											portion of the record than during the early 1990s.
+										</p>
 
-                                    </div>
+										<p>
+											The estimated increase in annual ice loss was approximately
+											<b>10.7 Gt/yr² for Greenland</b> and
+											<b>4.3 Gt/yr² for Antarctica</b>.
+										</p>
 
+									</div>
 
-                                </div>
+								</div>
 
 
-                                <!-- =====================================================
-                                     CONCLUSION
-                                ====================================================== -->
 
-                                <hr>
+								<hr>
 
-                                <h3>Conclusion</h3>
 
-                                <p>
-                                    No single graph represents the entire climate system. The strength
-                                    of this analysis comes from examining several independent
-                                    observational records together.
-                                </p>
 
-                                <p>
-                                    The results show large increases in anthropogenic carbon dioxide
-                                    emissions, a long-term increase in global temperature, continuing
-                                    global sea-level rise, and substantial losses from the Greenland
-                                    and Antarctic ice sheets.
-                                </p>
+								<!-- =========================================
+								     QUESTION 5
+								========================================== -->
 
-                                <p>
-                                    The ice-sheet analysis also provides a direct physical link between
-                                    changes occurring in the polar regions and impacts elsewhere:
-                                    land-based ice lost from Greenland and Antarctica becomes additional
-                                    ocean water and contributes measurably to global sea-level rise.
-                                </p>
+								<h3>
+									5. How Much Sea-Level Rise Came From These Ice Sheets?
+								</h3>
 
-                            </article>
 
-                        </div>
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
 
-                    </div>
 
+									<!-- Text -->
 
-                    <!-- Sidebar -->
-                    <div class="col-4 col-12-narrower">
+									<div style="flex:1 1 300px;">
 
-                        <div id="sidebar">
+										<p>
+											Ice-mass loss can also be expressed as its equivalent
+											contribution to global mean sea level.
+										</p>
 
-                            <h6>Project Demo</h6>
+										<p>
+											Combining Greenland and Antarctica makes it possible to
+											estimate how much measurable water was added to the ocean
+											by the two major ice sheets.
+										</p>
 
-                            <section>
+										<p>
+											Between <b>1992 and 2020</b>, the combined losses from
+											Greenland and Antarctica contributed approximately
+											<b>21 millimeters of cumulative global sea-level rise</b>.
+										</p>
 
-                                <img
-                                    class="clickable-img"
-                                    src="assets/css/images/climate_change_project.png"
-                                    alt="Global climate change analysis"
-                                    style="width:100%; cursor:pointer;"
-                                >
+										<p>
+											Annual contributions varied substantially, but their
+											cumulative effect continued to increase as additional
+											land-based ice was transferred to the ocean.
+										</p>
 
-                            </section>
+									</div>
 
 
-                            <h6>Technologies Used</h6>
 
-                            <section>
+									<!-- Plot -->
 
-                                <ul>
-                                    <li>R</li>
-                                    <li>RStudio</li>
-                                    <li>ggplot2</li>
-                                    <li>dplyr</li>
-                                    <li>tidyr</li>
-                                    <li>Time-Series Analysis</li>
-                                    <li>Scientific Data Visualization</li>
-                                </ul>
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
 
-                            </section>
+										<img
+											class="clickable-img"
+											src="assets/css/images/climate_ice_sea_level_contribution.png"
+											alt="Sea-level contribution from Greenland and Antarctica"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
 
+									</div>
 
-                            <h6>Datasets</h6>
+								</div>
 
-                            <section>
 
-                                <p>
-                                    <b>Global Temperature</b><br>
-                                    NASA GISTEMP
-                                </p>
 
-                                <p>
-                                    <b>Global Sea Level</b><br>
-                                    CSIRO / NOAA
-                                </p>
+								<hr>
 
-                                <p>
-                                    <b>Global CO₂ Emissions</b><br>
-                                    Our World in Data
-                                </p>
 
-                                <p>
-                                    <b>Greenland & Antarctica</b><br>
-                                    IMBIE 2021 Ice Sheet Mass Balance
-                                </p>
 
-                            </section>
+								<!-- =========================================
+								     CONCLUSION
+								========================================== -->
 
+								<h3>Conclusion</h3>
 
-                            <h6>Period of Analysis</h6>
+								<p>
+									No single graph represents the entire climate system. The
+									strength of this analysis comes from examining several independent
+									observational records together.
+								</p>
 
-                            <section>
+								<p>
+									The records show substantial increases in carbon dioxide emissions,
+									a long-term increase in global temperature, continued global
+									sea-level rise, and substantial losses from the Greenland and
+									Antarctic ice sheets.
+								</p>
 
-                                <p>
-                                    Long-term climate indicators:<br>
-                                    <b>1880–present dataset period</b>
-                                </p>
+								<p>
+									The ice-sheet analysis provides a particularly clear physical
+									connection between changes occurring in the polar regions and
+									impacts elsewhere: land-based ice lost from Greenland and
+									Antarctica becomes additional ocean water and contributes
+									measurably to global sea-level rise.
+								</p>
 
-                                <p>
-                                    Ice-sheet analysis:<br>
-                                    <b>1992–2020</b>
-                                </p>
 
-                            </section>
+							</article>
 
-                        </div>
 
-                    </div>
+						</div>
 
-                </div>
+					</div>
 
-            </div>
 
-        </section>
 
+					<!-- =================================================
+					     SIDEBAR
+					================================================== -->
 
-        <!-- Image Modal -->
-        <div id="imgModal" class="modal">
+					<div class="col-4 col-12-narrower">
 
-            <span class="close">&times;</span>
+						<div id="sidebar">
 
-            <img
-                class="modal-content"
-                id="imgFull"
-                alt="Full size project image"
-            >
 
-        </div>
+							<!-- =========================================
+							     PROJECT DEMO
+							========================================== -->
 
+							<h6>Project Demo</h6>
 
-        <!-- Footer -->
-<div id="footer">
-</div>
+							<section>
 
-    </div>
+								<img
+									class="clickable-img"
+									src="assets/css/images/climate_project_demo.png"
+									alt="Global Climate Change Analysis Project Demo"
+									style="
+										width:100%;
+										cursor:pointer;
+									"
+								/>
 
+							</section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
 
 
-    <!-- Image Modal Script -->
-    <script>
+							<!-- =========================================
+							     IMAGE MODAL
+							========================================== -->
 
-        const modal = document.getElementById("imgModal");
-        const modalImg = document.getElementById("imgFull");
-        const closeBtn = document.getElementsByClassName("close")[0];
+							<div
+								id="imgModal"
+								class="modal"
+							>
 
-        document.querySelectorAll('.clickable-img').forEach(img => {
+								<span class="close">
+									&times;
+								</span>
 
-            img.style.cursor = 'pointer';
+								<img
+									class="modal-content"
+									id="imgFull"
+								/>
 
-            img.addEventListener('click', function () {
+							</div>
 
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                modalImg.alt = this.alt;
 
-            });
 
-        });
+							<!-- =========================================
+							     TECHNOLOGIES
+							========================================== -->
 
-        closeBtn.onclick = function () {
+							<h6>Technologies Used</h6>
 
-            modal.style.display = "none";
+							<p>
+								<b>Data Handling Environments:</b>
+								RStudio & Excel
+							</p>
 
-        };
+							<p>
+								<b>Languages:</b>
+								R programming
+							</p>
 
-        modal.onclick = function(event) {
+							<p>
+								<b>Analysis:</b>
+								Time-series analysis, trend analysis,
+								data integration
+							</p>
 
-            if (event.target === modal) {
+							<p>
+								<b>Visualization Tools:</b>
+								RStudio & ggplot2
+							</p>
 
-                modal.style.display = "none";
+							<p>
+								<b>Version Control:</b>
+								Git & GitHub
+							</p>
 
-            }
 
-        };
 
-        document.addEventListener("keydown", function(event) {
+							<!-- =========================================
+							     DATASETS
+							========================================== -->
 
-            if (event.key === "Escape") {
+							<h6>Dataset Information</h6>
 
-                modal.style.display = "none";
 
-            }
+							<p>
 
-        });
+								<b>
+									Global Temperature:
+								</b>
 
-    </script>
+								<br>
 
+								NASA GISTEMP
 
-    <!-- Remove title bar text if empty -->
-    <script>
+							</p>
 
-        document.addEventListener("DOMContentLoaded", function () {
 
-            const title = document.querySelector("#titleBar .title");
+							<p>
 
-            if (title && (!title.textContent || title.textContent === "undefined")) {
+								<b>
+									Global Sea Level:
+								</b>
 
-                title.textContent = "";
+								<br>
 
-            }
+								CSIRO / NOAA
 
-        });
+							</p>
 
-    </script>
+
+							<p>
+
+								<b>
+									Global CO₂ Emissions:
+								</b>
+
+								<br>
+
+								Our World in Data
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Greenland & Antarctica:
+								</b>
+
+								<br>
+
+								IMBIE 2021 Ice Sheet Mass Balance
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Description:
+								</b>
+
+								This analysis integrates multiple long-term
+								observational climate datasets to examine
+								carbon dioxide emissions, temperature change,
+								sea-level rise, and ice-sheet loss.
+
+							</p>
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<!-- =========================================================
+		     FOOTER
+		========================================================== -->
+
+		<div id="footer">
+		</div>
+
+
+	</div>
+
+
+
+	<!-- =========================================================
+	     SCRIPTS
+	========================================================== -->
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+
+	<script src="assets/js/browser.min.js"></script>
+
+	<script src="assets/js/breakpoints.min.js"></script>
+
+	<script src="assets/js/util.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+
+
+	<!-- Remove empty mobile title -->
+
+	<script>
+
+		document.addEventListener(
+			"DOMContentLoaded",
+			function() {
+
+				var titleBarTitle =
+					document.querySelector("#titleBar .title");
+
+				if (
+					titleBarTitle &&
+					(
+						titleBarTitle.textContent === "undefined" ||
+						titleBarTitle.textContent.trim() === ""
+					)
+				) {
+
+					titleBarTitle.textContent = "";
+
+				}
+
+			}
+		);
+
+	</script>
+
+
+
+	<!-- =========================================================
+	     IMAGE MODAL SCRIPT
+	========================================================== -->
+
+	<script>
+
+		const modal =
+			document.getElementById("imgModal");
+
+		const modalImg =
+			document.getElementById("imgFull");
+
+		const closeBtn =
+			document.getElementsByClassName("close")[0];
+
+
+		document
+			.querySelectorAll(".clickable-img")
+			.forEach(img => {
+
+				img.style.cursor = "pointer";
+
+				img.addEventListener(
+					"click",
+					function() {
+
+						modal.style.display = "block";
+
+						modalImg.src = this.src;
+
+						modalImg.alt = this.alt;
+
+					}
+				);
+
+			});
+
+
+		closeBtn.onclick = function() {
+
+			modal.style.display = "none";
+
+		};
+
+
+		/* Close modal when clicking outside image */
+
+		modal.addEventListener(
+			"click",
+			function(event) {
+
+				if (event.target === modal) {
+
+					modal.style.display = "none";
+
+				}
+
+			}
+		);
+
+
+		/* Close with Escape key */
+
+		document.addEventListener(
+			"keydown",
+			function(event) {
+
+				if (event.key === "Escape") {
+
+					modal.style.display = "none";
+
+				}
+
+			}
+		);
+
+	</script>
+
 
 </body>
+
 </html>
