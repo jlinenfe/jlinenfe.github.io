@@ -168,7 +168,7 @@
 	color:white;
 	margin-top:15px;
 ">
-	Click and drag your paddle to move
+	Move your mouse to control the paddle
 </p>
 
 </div>
@@ -272,133 +272,56 @@
 
 		pongClose.addEventListener("click", closePong);
 
-
-		/* --------------------------------
-   MOUSE PADDLE CONTROLS
+/* --------------------------------
+   FULL SCREEN MOUSE FOLLOW
 -------------------------------- */
 
-let draggingPaddle = false;
+document.addEventListener("mousemove", function(event) {
 
-
-/* Start dragging when player clicks paddle */
-
-canvas.addEventListener("mousedown", function(event) {
-
-	const rect = canvas.getBoundingClientRect();
-
-	const scaleX = canvas.width / rect.width;
-	const scaleY = canvas.height / rect.height;
-
-	const mouseX =
-		(event.clientX - rect.left) * scaleX;
-
-	const mouseY =
-		(event.clientY - rect.top) * scaleY;
-
-
-	/* Only grab if clicking the player's paddle */
-
-	if (
-		mouseX >= player.x &&
-		mouseX <= player.x + player.width &&
-		mouseY >= player.y &&
-		mouseY <= player.y + player.height
-	) {
-
-		draggingPaddle = true;
-
-		canvas.style.cursor = "grabbing";
-
+	if (!gameRunning) {
+		return;
 	}
 
-});
-
-
-/* Move paddle while mouse is held */
-
-canvas.addEventListener("mousemove", function(event) {
-
 	const rect = canvas.getBoundingClientRect();
+
+	const mouseYRelative =
+		event.clientY - rect.top;
 
 	const scaleY =
 		canvas.height / rect.height;
 
 	const mouseY =
-		(event.clientY - rect.top) * scaleY;
+		mouseYRelative * scaleY;
 
 
-	/* Show grab cursor when hovering over paddle */
+	/* Center paddle on mouse */
 
-	const scaleX =
-		canvas.width / rect.width;
-
-	const mouseX =
-		(event.clientX - rect.left) * scaleX;
+	player.y =
+		mouseY -
+		player.height / 2;
 
 
-	if (!draggingPaddle) {
+	/* Keep paddle inside game */
 
-		if (
-			mouseX >= player.x &&
-			mouseX <= player.x + player.width &&
-			mouseY >= player.y &&
-			mouseY <= player.y + player.height
-		) {
+	if (player.y < 0) {
 
-			canvas.style.cursor = "grab";
-
-		} else {
-
-			canvas.style.cursor = "default";
-
-		}
+		player.y = 0;
 
 	}
 
-
-	if (draggingPaddle) {
-
-		/*
-		 * Keep the center of the paddle
-		 * aligned with the mouse.
-		 */
+	if (
+		player.y + player.height >
+		canvas.height
+	) {
 
 		player.y =
-			mouseY -
-			player.height / 2;
-
-
-		/* Keep paddle inside canvas */
-
-		if (player.y < 0) {
-			player.y = 0;
-		}
-
-		if (
-			player.y + player.height >
-			canvas.height
-		) {
-
-			player.y =
-				canvas.height -
-				player.height;
-
-		}
+			canvas.height -
+			player.height;
 
 	}
 
 });
-
-
-/* Stop dragging */
-
-document.addEventListener("mouseup", function() {
-
-	draggingPaddle = false;
-
-	canvas.style.cursor = "default";
-
-});
+	
 
 
 /* Escape still closes Pong */
