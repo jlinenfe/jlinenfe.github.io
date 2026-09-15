@@ -1,0 +1,1016 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>Sumatra Forest Loss Analysis</title>
+
+	<meta charset="utf-8" />
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
+
+	<link
+		rel="stylesheet"
+		href="assets/css/main.css"
+	/>
+
+</head>
+
+
+<body class="is-preload">
+
+	<div id="page-wrapper">
+
+
+		<!-- =========================================================
+		     HEADER
+		========================================================== -->
+
+		<div id="header">
+
+			<nav id="nav">
+
+				<ul>
+
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="About.html">About</a>
+					</li>
+
+					<li class="current">
+						<a href="Projects.html">Projects</a>
+					</li>
+
+					<li>
+						<a href="docs.html">Documents</a>
+					</li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+
+
+
+		<!-- =========================================================
+		     MAIN
+		========================================================== -->
+
+		<section class="wrapper style1">
+
+			<div class="container">
+
+				<div class="row gtr-200">
+
+
+					<!-- =================================================
+					     MAIN CONTENT
+					================================================== -->
+
+					<div class="col-8 col-12-narrower">
+
+						<div id="content">
+
+							<article>
+
+
+								<!-- =========================================
+								     PROJECT TITLE
+								========================================== -->
+
+								<header>
+
+									<h2 class="major">
+
+										<i class="fas fa-tree"></i>
+
+										Sumatra Forest Loss Analysis
+
+									</h2>
+
+									<hr>
+
+								</header>
+
+
+
+								<!-- =========================================
+								     PROJECT OVERVIEW
+								========================================== -->
+
+								<div
+									style="
+										display:flex;
+										align-items:flex-start;
+										flex-wrap:wrap;
+										gap:25px;
+										margin-bottom:30px;
+									"
+								>
+
+
+									<!-- Circular project image -->
+
+									<div
+										style="
+											width:32%;
+											max-width:255px;
+											min-width:210px;
+											flex-shrink:0;
+										"
+									>
+
+										<img
+											src="assets/css/images/sumatra_deforestation_hook_slide1.png"
+											alt="Sumatra forest loss analysis"
+											style="
+												width:100%;
+												aspect-ratio:1 / 1;
+												object-fit:cover;
+												border-radius:50%;
+												display:block;
+											"
+										/>
+
+									</div>
+
+
+
+									<!-- Overview text -->
+
+									<div
+										style="
+											flex:1 1 350px;
+											min-width:0;
+										"
+									>
+
+										<h3>Project Overview</h3>
+
+										<p>
+											In this project, I used satellite-derived
+											forest-cover data to examine more than
+											<b>two decades of tree-cover loss across
+											Sumatra, Indonesia</b>.
+										</p>
+
+										<p>
+											Using the Hansen Global Forest Change
+											dataset, I established a baseline of areas
+											with at least <b>30% tree cover in 2000</b>
+											and tracked detected tree-cover loss within
+											that baseline from <b>2001 through 2024</b>.
+										</p>
+
+										<p>
+											The analysis combined spatial and temporal
+											methods to answer not only how much forest
+											cover was lost, but <b>where and when that
+											loss occurred</b>. The resulting maps and
+											time series reveal the cumulative
+											transformation of Sumatra's forested
+											landscape over the study period.
+										</p>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     BACKGROUND
+								========================================== -->
+
+								<h3>Background</h3>
+
+								<p>
+									Sumatra contains extensive tropical forests that
+									support exceptionally high biodiversity and provide
+									important ecosystem functions including carbon
+									storage, watershed protection, and habitat for
+									wildlife.
+								</p>
+
+								<p>
+									Over recent decades, large portions of the island's
+									forested landscape have experienced tree-cover loss.
+									Understanding this change requires more than a single
+									before-and-after map. Annual satellite observations
+									make it possible to reconstruct how loss accumulated
+									across the landscape through time.
+								</p>
+
+								<p>
+									This project uses remotely sensed data to translate
+									that long-term change into an accessible spatial and
+									temporal analysis, allowing both the magnitude and
+									geographic pattern of forest loss to be examined.
+								</p>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     QUESTIONS
+								========================================== -->
+
+								<h3>Questions</h3>
+
+								<p>
+									The analysis was organized around several related
+									questions:
+								</p>
+
+
+								<ul style="font-size:1.05em; line-height:1.6;">
+
+									<li>
+										How much of Sumatra's 2000 forest baseline
+										experienced detected tree-cover loss between
+										2001 and 2024?
+									</li>
+
+									<li>
+										Where across the island has tree-cover loss
+										occurred?
+									</li>
+
+									<li>
+										How did the amount of annual tree-cover loss
+										change through time?
+									</li>
+
+									<li>
+										Which years experienced particularly high
+										levels of forest loss?
+									</li>
+
+									<li>
+										What does the cumulative spatial pattern reveal
+										about the transformation of Sumatra's forested
+										landscape?
+									</li>
+
+								</ul>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYTICAL APPROACH
+								========================================== -->
+
+								<h3>Analytical Approach</h3>
+
+								<p>
+									The analysis used the
+									<b>Hansen Global Forest Change v1.12</b> dataset,
+									which provides satellite-derived information on
+									global tree cover and annual tree-cover loss.
+									Administrative and geographic boundaries were
+									derived from GADM.
+								</p>
+
+								<p>
+									A forest baseline was first established using areas
+									with <b>at least 30% tree cover in 2000</b>.
+									Annual loss layers from 2001–2024 were then used to
+									identify pixels within that baseline where
+									tree-cover loss was detected.
+								</p>
+
+								<p>
+									The spatial data were processed across Sumatra and
+									combined to calculate annual loss area in square
+									kilometers. Annual results were then summarized as a
+									time series, while the underlying raster information
+									was used to map both cumulative and year-by-year
+									changes across the island.
+								</p>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYSIS 1
+								========================================== -->
+
+								<h3>
+									1. How Much Forest Cover Was Lost?
+								</h3>
+
+
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
+
+
+									<!-- Text -->
+
+									<div style="flex:1 1 300px;">
+
+										<p>
+											The cumulative analysis reveals extensive
+											tree-cover loss across Sumatra between
+											<b>2001 and 2024</b>.
+										</p>
+
+										<p>
+											Across areas classified as forest under the
+											2000 baseline, approximately
+											<b>137,626 km² of tree-cover loss</b> was
+											detected during the study period.
+										</p>
+
+										<p>
+											This represents approximately
+											<b>36% of the forest area identified in the
+											2000 baseline</b>.
+										</p>
+
+										<p>
+											The cumulative map makes the scale of this
+											change visible: every highlighted loss pixel
+											represents an area that met the forest
+											baseline at the beginning of the analysis
+											and subsequently experienced detected
+											tree-cover loss.
+										</p>
+
+									</div>
+
+
+
+									<!-- Cumulative map -->
+
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
+
+										<img
+											class="clickable-img"
+											src="assets/css/images/sumatra_deforestation_hook_slide1.png"
+											alt="Cumulative tree-cover loss across Sumatra from 2001 to 2024"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYSIS 2
+								========================================== -->
+
+								<h3>
+									2. When Did Forest Loss Occur?
+								</h3>
+
+
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
+
+
+									<!-- Annual plot -->
+
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
+
+										<img
+											class="clickable-img"
+											src="assets/css/images/sumatra_annual_treecover_loss_slide3.png"
+											alt="Annual tree-cover loss across Sumatra from 2001 to 2024"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
+
+									</div>
+
+
+
+									<!-- Text -->
+
+									<div style="flex:1 1 300px;">
+
+										<p>
+											Forest loss did not occur at a constant rate.
+											Annual tree-cover loss varied substantially
+											throughout the <b>2001–2024</b> record.
+										</p>
+
+										<p>
+											Loss increased sharply during portions of
+											the 2000s and early 2010s, with the highest
+											annual value occurring in
+											<b>2012</b>.
+										</p>
+
+										<p>
+											Approximately <b>11,032 km²</b> of
+											tree-cover loss was detected during that
+											year alone, making it the largest annual
+											loss observed in the analyzed record.
+										</p>
+
+										<p>
+											Annual loss subsequently declined from the
+											highest values observed earlier in the
+											record, although substantial tree-cover loss
+											continued through 2024.
+										</p>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYSIS 3
+								========================================== -->
+
+								<h3>
+									3. Where Did Forest Loss Progress Through Time?
+								</h3>
+
+
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
+
+
+									<!-- Text -->
+
+									<div style="flex:1 1 300px;">
+
+										<p>
+											Annual totals describe the magnitude of
+											forest loss, but they do not show how that
+											change unfolded spatially across Sumatra.
+										</p>
+
+										<p>
+											To visualize this progression, I created an
+											animation that reconstructs the forest-loss
+											record one year at a time from
+											<b>2001 through 2024</b>.
+										</p>
+
+										<p>
+											Each frame identifies newly detected loss
+											for that year within the original 2000
+											forest baseline. Viewed sequentially, the
+											animation illustrates how individual annual
+											loss events accumulate into a much larger
+											long-term transformation of the landscape.
+										</p>
+
+										<p>
+											This spatial perspective is particularly
+											useful because similar annual totals can
+											represent very different geographic patterns
+											of change.
+										</p>
+
+									</div>
+
+
+
+									<!-- Animation -->
+
+									<div
+										style="
+											flex:0 1 350px;
+											max-width:350px;
+										"
+									>
+
+										<img
+											class="clickable-img"
+											src="assets/css/images/sumatra_deforestation_animation_slide2.gif"
+											alt="Animation of annual tree-cover loss across Sumatra from 2001 to 2024"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     INTERPRETATION
+								========================================== -->
+
+								<h3>Landscape Interpretation</h3>
+
+								<p>
+									Looking at the three analyses together provides a
+									more complete picture than any single statistic.
+									The cumulative map shows the overall geographic
+									extent of detected loss, the annual time series
+									reveals when the greatest losses occurred, and the
+									animation reconstructs how those changes accumulated
+									across the landscape.
+								</p>
+
+								<p>
+									The results show that forest loss across Sumatra was
+									neither spatially nor temporally uniform. Instead,
+									the modern landscape reflects more than two decades
+									of individual loss events occurring at different
+									times and locations across the island.
+								</p>
+
+								<p>
+									Importantly, the Hansen dataset measures
+									<b>tree-cover loss</b>. Detection of loss identifies
+									a substantial change in tree cover but does not, by
+									itself, identify the specific cause of that change
+									or determine whether the loss was permanent.
+								</p>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     CONCLUSION
+								========================================== -->
+
+								<h3>Conclusion</h3>
+
+								<p>
+									Between 2001 and 2024, approximately
+									<b>137,626 km² of tree-cover loss</b> was detected
+									within Sumatra's 2000 forest baseline, equivalent to
+									approximately <b>36% of that baseline forest
+									area</b>.
+								</p>
+
+								<p>
+									The annual record shows that this transformation did
+									not occur evenly through time. Loss varied markedly
+									between years and reached a maximum of approximately
+									<b>11,032 km² in 2012</b>.
+								</p>
+
+								<p>
+									Combining satellite observations with spatial and
+									temporal analysis makes it possible to move beyond
+									a single measure of total forest loss and instead
+									examine <b>how much was lost, when it occurred, and
+									where that change accumulated across the
+									landscape</b>.
+								</p>
+
+
+							</article>
+
+						</div>
+
+					</div>
+
+
+
+					<!-- =================================================
+					     SIDEBAR
+					================================================== -->
+
+					<div class="col-4 col-12-narrower">
+
+						<div id="sidebar">
+
+
+							<!-- =========================================
+							     PROJECT DEMO
+							========================================== -->
+
+							<h6>Project Demo</h6>
+
+							<section>
+
+								<img
+									class="clickable-img"
+									src="assets/css/images/sumatra_deforestation_hook_slide1.png"
+									alt="Sumatra forest loss project demo"
+									style="
+										width:100%;
+										cursor:pointer;
+									"
+								/>
+
+							</section>
+
+
+
+							<!-- =========================================
+							     IMAGE MODAL
+							========================================== -->
+
+							<div
+								id="imgModal"
+								class="modal"
+							>
+
+								<span class="close">
+									&times;
+								</span>
+
+								<img
+									class="modal-content"
+									id="imgFull"
+								/>
+
+							</div>
+
+
+
+							<!-- =========================================
+							     TECHNOLOGIES
+							========================================== -->
+
+							<h6>Technologies Used</h6>
+
+							<p>
+								<b>Analysis Environment:</b>
+								R & RStudio
+							</p>
+
+							<p>
+								<b>Languages:</b>
+								R programming
+							</p>
+
+							<p>
+								<b>Spatial Analysis:</b>
+								Raster processing & GIS
+							</p>
+
+							<p>
+								<b>Analysis:</b>
+								Remote sensing, time-series analysis,
+								spatial analysis & annual area calculations
+							</p>
+
+							<p>
+								<b>Visualization:</b>
+								ggplot2, spatial mapping & animation
+							</p>
+
+							<p>
+								<b>Version Control:</b>
+								Git & GitHub
+							</p>
+
+
+
+							<!-- =========================================
+							     DATASETS
+							========================================== -->
+
+							<h6>Dataset Information</h6>
+
+
+							<p>
+
+								<b>
+									Forest Data:
+								</b>
+
+								<br>
+
+								Hansen Global Forest Change v1.12
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Boundary Data:
+								</b>
+
+								<br>
+
+								GADM
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Study Area:
+								</b>
+
+								<br>
+
+								Sumatra, Indonesia
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Study Period:
+								</b>
+
+								<br>
+
+								2001–2024
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Forest Baseline:
+								</b>
+
+								<br>
+
+								Areas with ≥30% tree cover in 2000
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Primary Metric:
+								</b>
+
+								<br>
+
+								Annual and cumulative tree-cover loss
+								within the 2000 forest baseline
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Spatial Inputs:
+								</b>
+
+								<br>
+
+								Hansen Global Forest Change tiles covering
+								Sumatra and surrounding islands
+
+							</p>
+
+
+							<p>
+
+								<b>
+									Description:
+								</b>
+
+								<br>
+
+								Satellite-derived tree-cover and annual
+								tree-cover-loss data were processed to
+								quantify and visualize the spatial and
+								temporal progression of forest loss across
+								Sumatra.
+
+							</p>
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<!-- =========================================================
+		     FOOTER
+		========================================================== -->
+
+		<div id="footer">
+		</div>
+
+
+	</div>
+
+
+
+	<!-- =========================================================
+	     SCRIPTS
+	========================================================== -->
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+
+	<script src="assets/js/browser.min.js"></script>
+
+	<script src="assets/js/breakpoints.min.js"></script>
+
+	<script src="assets/js/util.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+
+
+	<!-- Remove empty mobile title -->
+
+	<script>
+
+		document.addEventListener(
+			"DOMContentLoaded",
+			function() {
+
+				var titleBarTitle =
+					document.querySelector("#titleBar .title");
+
+				if (
+					titleBarTitle &&
+					(
+						titleBarTitle.textContent === "undefined" ||
+						titleBarTitle.textContent.trim() === ""
+					)
+				) {
+
+					titleBarTitle.textContent = "";
+
+				}
+
+			}
+		);
+
+	</script>
+
+
+
+	<!-- =========================================================
+	     IMAGE MODAL
+	========================================================== -->
+
+	<script>
+
+		const modal =
+			document.getElementById("imgModal");
+
+		const modalImg =
+			document.getElementById("imgFull");
+
+		const closeBtn =
+			document.getElementsByClassName("close")[0];
+
+
+		document
+			.querySelectorAll(".clickable-img")
+			.forEach(img => {
+
+				img.style.cursor = "pointer";
+
+				img.addEventListener(
+					"click",
+					function() {
+
+						modal.style.display = "block";
+
+						modalImg.src = this.src;
+
+						modalImg.alt = this.alt;
+
+					}
+				);
+
+			});
+
+
+		closeBtn.onclick = function() {
+
+			modal.style.display = "none";
+
+		};
+
+
+		/* Close by clicking outside image */
+
+		modal.addEventListener(
+			"click",
+			function(event) {
+
+				if (event.target === modal) {
+
+					modal.style.display = "none";
+
+				}
+
+			}
+		);
+
+
+		/* Close with Escape */
+
+		document.addEventListener(
+			"keydown",
+			function(event) {
+
+				if (event.key === "Escape") {
+
+					modal.style.display = "none";
+
+				}
+
+			}
+		);
+
+	</script>
+
+
+</body>
+
+</html>
