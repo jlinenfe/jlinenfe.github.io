@@ -1,147 +1,950 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Everglades Wading Bird Foraging & Nesting Trends</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
 
-				<!-- Header -->
-			<div id="header">
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="About.html">About</a></li>
-						<li class="current"><a href="Projects.html">Projects</a></li>
-						<li><a href="docs.html">Documents</a></li>
-					</ul>
-				</nav>
-	
-			</div>
+<head>
 
-			<!-- Main -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-8 col-12-narrower">
-								<div id="content">
-									<!-- Content -->
-										<article>
-    <header>
-        <h2 class="major"><i class="fas fa-book fa-"></i> Everglades Wading Bird Foraging & Nesting Trends</h2>
-        <hr>
-    </header>
-<span class="image center"><img src="assets/css/images/coastal_ENP.JPG" alt="" /></span>											<h3>Project Overview</h3>
-    <p>In this project, I analyzed over 30 years of nesting data to investigate long-term trends in wood stork and roseate spoonbill populations across the Greater Everglades Ecosystem. Partnering with agencies including Everglades National Park, South Florida Water Management District, Audubon Florida, and the University of Florida, I compiled and cleaned data from multiple sources to assess how nest counts and locations have changed over time.</p> 
-    <p>Using statistical modeling and spatial analysis in RStudio and GIS, I examined the influence of hydrologic change and restoration efforts on nesting behavior and distribution. The results shed light on how these indicator species are responding to shifting environmental conditions and help predict how future restoration may shape their recovery.</p>
-    <hr>
-											<h3>Background</h3>
-   <p>Roseate Spoonbills and Wood Storks historically nested along the coastlines of Everglades National Park and Florida Bay, relying on seasonal hydrology to support predictable foraging conditions. However, urbanization and disrupted freshwater flows have pushed both species inland over recent decades, signaling major ecological shifts in the Everglades.</p> 
-<p>With large-scale restoration efforts underway since the early 2000s to reestablish more natural water patterns, this study examines whether nesting and foraging trends in these indicator species reflect a return to historical coastal use. Understanding how and where these birds are responding helps evaluate the effectiveness of restoration in rebalancing ecosystem function across the Greater Everglades.</p>
-											
-                                            
+	<title>Everglades Wading Bird Foraging & Nesting Trends</title>
 
-											<hr>
-																						<h3>Objective</h3>
-                                           <p>The primary objective of this study was to evaluate long-term nesting and foraging trends of Roseate Spoonbills and Wood Storks in the Greater Everglades to better understand how restoration efforts are influencing their behavior and habitat use. Specifically, the analysis aimed to:</p> <ul style="font-size: 1.15em; line-height: 1.6;"> <li>Identify how nesting locations and counts have shifted over the past 30 years</li> <li>Assess changes in foraging distribution across time and space</li> <li>Determine the key hydrologic drivers of coastal nesting trends, including recession rates, hydroperiod, depth at the start of the nesting season, and rainfall in both the current and antecedent years</li> <li>Evaluate whether restoration initiatives are contributing to a return to historic coastal nesting behavior</li> </ul> <p>These findings help assess the effectiveness of restoration strategies and inform future ecological management decisions.</p>
-											<hr>
-											<h3>Results Summary</h3>
-											<div class="tile-container">
-												<div class="tile">
-													<div class="tile-text">
-														<h5><b>Nesting Count and Location Trends</b></h5>
-<p>Analysis of long-term nesting data revealed that <b>wading bird locations and counts</b> have shifted over the past <b>30 years</b>, with <b>wood storks</b> returning to historic coastal colonies, suggesting restoration is supporting their recovery. In contrast, <b>roseate spoonbills</b> are nesting further inland, not necessarily signaling restoration failure but instead reflecting a potential new baseline as <b>sea level rise</b> makes traditional bay foraging areas too deep.</p>
-<p>&nbsp;</p>
-<p><span class="image fit"><img class="clickable-img" src="assets/css/images/JLOREN_RSOP_WOST_BAR_PLOT.png" alt="Nesting bar trends" style="display:block;" /></span></p>													  </div>
-												  </div>
-												  <div class="tile">
-													<div class="tile-text">
-														<h5><b>Water depth & Nest Count correlation</b></h5>
-<p><b>Correlation analysis</b> examining the relationship between <b>coastal water depth</b> and <b>wood stork nesting</b> revealed that when annual median depths exceeded <b>18 cm</b>, above-average nesting was consistently observed. This provides managers with a preliminary understanding of how hydrologic conditions may influence colony success in the coastal Everglades.</p>
-<p>&nbsp;</p>
-<p><span class="image fit"><img class="clickable-img" src="assets/css/images/corr_stork_meandepth.png" alt="correlation" /></span></p>
+	<meta charset="utf-8" />
 
-													  </div>
-												  </div>
-												  <div class="tile">
-													<div class="tile-text">
-														<h5><b>Geographic Insights</b></h5>
-<p>An <b>animated GIF</b> illustrates the <b>habitat use and foraging locations</b> of wood storks across the Everglades ecosystem. It highlights how water depths must be high and then gradually recede throughout the system to sustain suitable habitat and prey availability from pre-nesting foraging through fledging. This past year represented a particularly strong season for <b>nesting success</b> in the Everglades.</p>
-                                                        <p>&nbsp;</p>
-                                                        <p><span class="image fit"><img class="clickable-img" src="assets/css/images/p_2020_2021_animation.gif" alt="Insihgts" /></span></p>
-													  </div>
-												  </div>
-										</article>
-								</div>
-							</div>
-							<div class="col-4 col-12-narrower">
-								<div id="sidebar">
-									<!-- Sidebar -->
-									<!-- Clickable Image Modal -->
-<h6>Project Demo</h6>
-<section>
-<img class="clickable-img" src="assets/css/images/nesting_demo.png" alt="nesting Demo" style="width:100%; cursor:pointer;">
-</section>
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
 
-<!-- Modal structure -->
-<div id="imgModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="imgFull">
-</div>
-									<h6>Technologies Used</h6>
-									<p><b>Data Handling Environments:</b> Rstudio & Excel</p>
-									<p><b>Languages: </b>  R programming</p>
-									<p><b>Visualization Tools: </b>  Rstudio, Powerpoint</p>
-									<p><b>Version Control: </b> Git & GitHub</p>
-									<h6>Dataset Information</h6>
-									<p><b>Source:</b> SFWMD, ENP, UF, Audubon</p>
-<p><b>Description:</b> This analysis integrates datasets collected by multiple agencies through a combination of reconnaissance flights and ground-based surveys.</p>
-									</section>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			<!-- Footer -->
-            <div id="footer">
-            </div>
+	<link
+		rel="stylesheet"
+		href="assets/css/main.css"
+	/>
+
+</head>
+
+
+<body class="is-preload">
+
+	<div id="page-wrapper">
+
+
+		<!-- =========================================================
+		     HEADER
+		========================================================== -->
+
+		<div id="header">
+
+			<nav id="nav">
+
+				<ul>
+
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="About.html">About</a>
+					</li>
+
+					<li class="current">
+						<a href="Projects.html">Projects</a>
+					</li>
+
+					<li>
+						<a href="docs.html">Documents</a>
+					</li>
+
+				</ul>
+
+			</nav>
+
 		</div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-			var titleBarTitle = document.querySelector("#titleBar .title");
-			if (titleBarTitle && (titleBarTitle.textContent === "undefined" || titleBarTitle.textContent.trim() === "")) {
-				titleBarTitle.textContent = "";
+
+
+		<!-- =========================================================
+		     MAIN
+		========================================================== -->
+
+		<section class="wrapper style1">
+
+			<div class="container">
+
+				<div class="row gtr-200">
+
+
+					<!-- =================================================
+					     MAIN CONTENT
+					================================================== -->
+
+					<div class="col-8 col-12-narrower">
+
+						<div id="content">
+
+							<article>
+
+
+								<!-- =========================================
+								     PROJECT TITLE
+								========================================== -->
+
+								<header>
+
+									<h2 class="major">
+
+										<i class="fas fa-feather-alt"></i>
+
+										Everglades Wading Bird Foraging & Nesting Trends
+
+									</h2>
+
+									<hr>
+
+								</header>
+
+
+
+								<!-- =========================================
+								     PROJECT OVERVIEW
+								========================================== -->
+
+								<div
+									style="
+										display:flex;
+										align-items:flex-start;
+										flex-wrap:wrap;
+										gap:25px;
+										margin-bottom:30px;
+									"
+								>
+
+
+									<!-- Circular project image -->
+
+									<div
+										style="
+											width:32%;
+											max-width:255px;
+											min-width:210px;
+											flex-shrink:0;
+										"
+									>
+
+										<img
+											src="assets/css/images/coastal_ENP.JPG"
+											alt="Everglades coastal wading bird habitat"
+											style="
+												width:100%;
+												aspect-ratio:1 / 1;
+												object-fit:cover;
+												border-radius:50%;
+												display:block;
+											"
+										/>
+
+									</div>
+
+
+
+									<!-- Overview text -->
+
+									<div
+										style="
+											flex:1 1 350px;
+											min-width:0;
+										"
+									>
+
+										<h3>Project Overview</h3>
+
+										<p>
+											In this project, I analyzed more than
+											<b>30 years of nesting data</b> to investigate
+											long-term trends in wood stork and roseate
+											spoonbill populations across the Greater
+											Everglades Ecosystem.
+										</p>
+
+										<p>
+											Working with datasets collected by
+											Everglades National Park, the South Florida
+											Water Management District, Audubon Florida,
+											and the University of Florida, I compiled and
+											cleaned information from multiple sources to
+											evaluate how nesting abundance, colony
+											locations, and habitat use have changed
+											through time.
+										</p>
+
+										<p>
+											Using statistical and spatial analysis in
+											R and GIS, I examined how hydrologic
+											conditions and restoration may influence
+											wading bird nesting and foraging patterns
+											across the Everglades.
+										</p>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     BACKGROUND
+								========================================== -->
+
+								<h3>Background</h3>
+
+								<p>
+									Roseate spoonbills and wood storks historically
+									nested along the coastlines of Everglades National
+									Park and Florida Bay, where seasonal changes in
+									water level created predictable shallow-water
+									foraging habitat.
+								</p>
+
+								<p>
+									Alteration of freshwater flows across the Everglades
+									changed the timing, depth, and distribution of water
+									throughout the ecosystem. These changes contributed
+									to shifts in where wading birds forage and establish
+									nesting colonies.
+								</p>
+
+								<p>
+									Large-scale Everglades restoration is intended to
+									reestablish more natural freshwater flow and
+									hydrologic patterns. Because wading birds respond
+									strongly to hydrologic conditions and prey
+									availability, their nesting and foraging patterns
+									provide an important ecological indicator of how the
+									ecosystem is responding.
+								</p>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     QUESTIONS
+								========================================== -->
+
+								<h3>Questions</h3>
+
+								<p>
+									The analysis was organized around several related
+									ecological questions:
+								</p>
+
+
+								<ul style="font-size:1.05em; line-height:1.6;">
+
+									<li>
+										How have wood stork and roseate spoonbill
+										nesting abundance and colony locations changed
+										over the past 30 years?
+									</li>
+
+									<li>
+										How has wading bird foraging distribution
+										changed across the Greater Everglades?
+									</li>
+
+									<li>
+										What hydrologic conditions are associated with
+										successful coastal wood stork nesting?
+									</li>
+
+									<li>
+										Are restoration-related hydrologic changes
+										supporting a return toward historic coastal
+										habitat use?
+									</li>
+
+								</ul>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYTICAL APPROACH
+								========================================== -->
+
+								<h3>Analytical Approach</h3>
+
+								<p>
+									Long-term nesting and foraging datasets collected
+									by multiple agencies were compiled, standardized,
+									and analyzed in R. Spatial information was also
+									integrated using GIS to evaluate changes in colony
+									and foraging distributions across the Greater
+									Everglades.
+								</p>
+
+								<p>
+									Nesting abundance and locations were compared
+									through time for wood storks and roseate spoonbills.
+									Hydrologic information was then incorporated to
+									examine relationships between environmental
+									conditions and nesting response.
+								</p>
+
+								<p>
+									Particular attention was given to water depth and
+									the seasonal recession of water levels because
+									wading birds depend on the concentration of aquatic
+									prey into accessible shallow-water habitats during
+									the nesting season.
+								</p>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYSIS 1
+								========================================== -->
+
+								<h3>
+									1. How Have Nesting Counts and Locations Changed?
+								</h3>
+
+
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
+
+
+									<!-- Text -->
+
+									<div style="flex:1 1 300px;">
+
+										<p>
+											Long-term nesting records show that
+											<b>wading bird abundance and colony locations
+											have shifted substantially over the past
+											30 years</b>.
+										</p>
+
+										<p>
+											Wood storks have increasingly returned to
+											historic coastal colonies, providing evidence
+											that improving hydrologic conditions may be
+											supporting renewed use of these areas.
+										</p>
+
+										<p>
+											Roseate spoonbills, however, have shown a
+											different spatial response, with nesting
+											activity shifting farther inland.
+										</p>
+
+										<p>
+											This difference is important because it may
+											not simply represent restoration failure.
+											Rising sea levels can increase water depths
+											in traditional Florida Bay foraging areas,
+											potentially creating a new ecological
+											baseline in which some historically suitable
+											habitat is becoming less accessible.
+										</p>
+
+									</div>
+
+
+
+									<!-- Plot -->
+
+									<div
+										style="
+											flex:0 1 355px;
+											max-width:355px;
+										"
+									>
+
+										<img
+											class="clickable-img"
+											src="assets/css/images/JLOREN_RSOP_WOST_BAR_PLOT.png"
+											alt="Wood stork and roseate spoonbill nesting trends"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYSIS 2
+								========================================== -->
+
+								<h3>
+									2. How Does Water Depth Relate to Wood Stork Nesting?
+								</h3>
+
+
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
+
+
+									<!-- Plot -->
+
+									<div
+										style="
+											flex:0 1 355px;
+											max-width:355px;
+										"
+									>
+
+										<img
+											class="clickable-img"
+											src="assets/css/images/corr_stork_meandepth.png"
+											alt="Relationship between coastal water depth and wood stork nesting"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
+
+									</div>
+
+
+
+									<!-- Text -->
+
+									<div style="flex:1 1 300px;">
+
+										<p>
+											Hydrology is one of the major controls on
+											wading bird foraging habitat. Water must be
+											deep enough to support aquatic prey
+											production but shallow enough during the
+											nesting season for birds to successfully
+											capture that prey.
+										</p>
+
+										<p>
+											Correlation analysis examining
+											<b>coastal water depth and wood stork nest
+											counts</b> identified a relationship between
+											annual hydrologic conditions and nesting
+											response.
+										</p>
+
+										<p>
+											In the analyzed record, years with annual
+											median coastal water depths greater than
+											approximately <b>18 cm</b> were associated
+											with above-average wood stork nesting.
+										</p>
+
+										<p>
+											This provides a preliminary quantitative
+											indicator of the hydrologic conditions that
+											may support successful coastal nesting.
+										</p>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ANALYSIS 3
+								========================================== -->
+
+								<h3>
+									3. How Does Foraging Habitat Change Through the Nesting Season?
+								</h3>
+
+
+								<div
+									style="
+										display:flex;
+										flex-wrap:wrap;
+										align-items:center;
+										gap:25px;
+										margin-bottom:35px;
+									"
+								>
+
+
+									<!-- Text -->
+
+									<div style="flex:1 1 300px;">
+
+										<p>
+											Wading bird nesting success depends on more
+											than conditions immediately surrounding a
+											colony. Birds require suitable foraging
+											habitat across the broader Everglades
+											landscape throughout the nesting season.
+										</p>
+
+										<p>
+											The spatial animation illustrates
+											<b>wood stork habitat use and foraging
+											locations across the Everglades</b> as
+											hydrologic conditions change through time.
+										</p>
+
+										<p>
+											Successful conditions generally require
+											sufficiently high water before the nesting
+											season followed by a gradual recession.
+											As water levels decline, aquatic prey become
+											concentrated into progressively smaller
+											wetland areas where they become accessible
+											to foraging birds.
+										</p>
+
+										<p>
+											This landscape-scale progression helps
+											sustain food availability from pre-nesting
+											foraging through chick development and
+											fledging.
+										</p>
+
+									</div>
+
+
+
+									<!-- GIF -->
+
+									<div
+										style="
+											flex:0 1 355px;
+											max-width:355px;
+										"
+									>
+
+										<img
+											class="clickable-img"
+											src="assets/css/images/p_2020_2021_animation.gif"
+											alt="Animated wood stork foraging distribution across the Everglades"
+											style="
+												width:100%;
+												height:auto;
+												display:block;
+												cursor:pointer;
+											"
+										/>
+
+									</div>
+
+								</div>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     ECOLOGICAL INTERPRETATION
+								========================================== -->
+
+								<h3>Ecological Interpretation</h3>
+
+								<p>
+									The results illustrate why wading birds are useful
+									indicators of Everglades restoration. Their response
+									integrates conditions occurring across both space
+									and time: sufficient wet-season water is needed to
+									support prey production, while appropriate dry-season
+									recession is needed to concentrate those prey into
+									accessible foraging habitat.
+								</p>
+
+								<p>
+									The return of wood storks to historic coastal
+									nesting areas provides an encouraging indication of
+									ecological response. At the same time, the inland
+									movement of roseate spoonbills illustrates that
+									restoration is occurring within an ecosystem that is
+									also being altered by sea-level rise and other
+									long-term environmental changes.
+								</p>
+
+
+
+								<hr>
+
+
+
+								<!-- =========================================
+								     CONCLUSION
+								========================================== -->
+
+								<h3>Conclusion</h3>
+
+								<p>
+									More than three decades of monitoring reveal that
+									wading bird nesting and foraging patterns across the
+									Greater Everglades are not static. Both abundance
+									and spatial distributions have changed as hydrologic
+									conditions, restoration, and the surrounding
+									environment have evolved.
+								</p>
+
+								<p>
+									Combining long-term biological monitoring with
+									hydrologic and spatial analysis provides a way to
+									move beyond simply counting nests and instead
+									evaluate <b>why, where, and under what environmental
+									conditions wading birds are responding</b>.
+								</p>
+
+								<p>
+									Continued monitoring will be important for
+									distinguishing restoration-driven recovery from
+									longer-term shifts in habitat suitability and for
+									informing future Everglades water-management
+									decisions.
+								</p>
+
+
+							</article>
+
+						</div>
+
+					</div>
+
+
+
+					<!-- =================================================
+					     SIDEBAR
+					================================================== -->
+
+					<div class="col-4 col-12-narrower">
+
+						<div id="sidebar">
+
+
+							<!-- =========================================
+							     PROJECT DEMO
+							========================================== -->
+
+							<h6>Project Demo</h6>
+
+							<section>
+
+								<img
+									class="clickable-img"
+									src="assets/css/images/nesting_demo.png"
+									alt="Everglades wading bird project demo"
+									style="
+										width:100%;
+										cursor:pointer;
+									"
+								/>
+
+							</section>
+
+
+
+							<!-- =========================================
+							     IMAGE MODAL
+							========================================== -->
+
+							<div
+								id="imgModal"
+								class="modal"
+							>
+
+								<span class="close">
+									&times;
+								</span>
+
+								<img
+									class="modal-content"
+									id="imgFull"
+								/>
+
+							</div>
+
+
+
+							<!-- =========================================
+							     TECHNOLOGIES
+							========================================== -->
+
+							<h6>Technologies Used</h6>
+
+							<p>
+								<b>Data Handling Environments:</b>
+								RStudio & Excel
+							</p>
+
+							<p>
+								<b>Languages:</b>
+								R programming
+							</p>
+
+							<p>
+								<b>Spatial Analysis:</b>
+								GIS & ArcGIS
+							</p>
+
+							<p>
+								<b>Analysis:</b>
+								Long-term trend analysis, correlation analysis,
+								hydrologic analysis, spatial analysis
+							</p>
+
+							<p>
+								<b>Visualization Tools:</b>
+								RStudio, GIS & PowerPoint
+							</p>
+
+							<p>
+								<b>Version Control:</b>
+								Git & GitHub
+							</p>
+
+
+
+							<!-- =========================================
+							     DATASETS
+							========================================== -->
+
+							<h6>Dataset Information</h6>
+
+							<p>
+								<b>Primary Sources:</b>
+								<br>
+								South Florida Water Management District
+								(SFWMD)
+							</p>
+
+							<p>
+								Everglades National Park
+								(ENP)
+							</p>
+
+							<p>
+								Audubon Florida
+							</p>
+
+							<p>
+								University of Florida
+								(UF)
+							</p>
+
+							<p>
+								<b>Study Area:</b>
+								<br>
+								Greater Everglades Ecosystem & Florida Bay
+							</p>
+
+							<p>
+								<b>Study Period:</b>
+								<br>
+								30+ years of nesting and foraging observations
+							</p>
+
+							<p>
+								<b>Description:</b>
+								<br>
+								This analysis integrates datasets collected
+								by multiple agencies through reconnaissance
+								flights, ground-based surveys, hydrologic
+								monitoring, and long-term ecological
+								monitoring programs.
+							</p>
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<!-- =========================================================
+		     FOOTER
+		========================================================== -->
+
+		<div id="footer">
+		</div>
+
+
+	</div>
+
+
+
+	<!-- =========================================================
+	     SCRIPTS
+	========================================================== -->
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+
+	<script src="assets/js/browser.min.js"></script>
+
+	<script src="assets/js/breakpoints.min.js"></script>
+
+	<script src="assets/js/util.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+
+
+	<!-- Remove empty mobile title -->
+
+	<script>
+
+		document.addEventListener(
+			"DOMContentLoaded",
+			function() {
+
+				var titleBarTitle =
+					document.querySelector("#titleBar .title");
+
+				if (
+					titleBarTitle &&
+					(
+						titleBarTitle.textContent === "undefined" ||
+						titleBarTitle.textContent.trim() === ""
+					)
+				) {
+
+					titleBarTitle.textContent = "";
+
+				}
+
 			}
+		);
+
+	</script>
+
+
+
+	<!-- =========================================================
+	     IMAGE MODAL
+	========================================================== -->
+
+	<script>
+
+		const modal =
+			document.getElementById("imgModal");
+
+		const modalImg =
+			document.getElementById("imgFull");
+
+		const closeBtn =
+			document.getElementsByClassName("close")[0];
+
+
+		document
+			.querySelectorAll(".clickable-img")
+			.forEach(img => {
+
+				img.style.cursor = "pointer";
+
+				img.addEventListener(
+					"click",
+					function() {
+
+						modal.style.display = "block";
+
+						modalImg.src = this.src;
+
+						modalImg.alt = this.alt;
+
+					}
+				);
+
 			});
-		</script>
-<!-- JS for image modal (for all images) -->
-<script>
-  const modal = document.getElementById("imgModal");
-  const modalImg = document.getElementById("imgFull");
-  const closeBtn = document.getElementsByClassName("close")[0];
 
-  document.querySelectorAll('.clickable-img').forEach(img => {
-    img.style.cursor = 'pointer'; // sets pointer cursor
-    img.addEventListener('click', function () {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    });
-  });
 
-  closeBtn.onclick = function () {
-    modal.style.display = "none";
-  };
-</script>
+		closeBtn.onclick = function() {
+
+			modal.style.display = "none";
+
+		};
+
+
+		/* Close by clicking outside image */
+
+		modal.addEventListener(
+			"click",
+			function(event) {
+
+				if (event.target === modal) {
+
+					modal.style.display = "none";
+
+				}
+
+			}
+		);
+
+
+		/* Close with Escape */
+
+		document.addEventListener(
+			"keydown",
+			function(event) {
+
+				if (event.key === "Escape") {
+
+					modal.style.display = "none";
+
+				}
+
+			}
+		);
+
+	</script>
+
+
 </body>
+
 </html>
