@@ -1,0 +1,792 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Oil, Time, and the Energy Transition</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+<div id="page-wrapper">
+
+    <!-- HEADER -->
+    <div id="header">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="current"><a href="Projects.html">Projects</a></li>
+                <li><a href="docs.html">Documents</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MAIN -->
+    <section class="wrapper style1">
+        <div class="container">
+            <div class="row gtr-200">
+
+                <!-- MAIN CONTENT -->
+                <div class="col-8 col-12-narrower">
+                    <div id="content">
+                        <article>
+
+                            <!-- PROJECT TITLE -->
+                            <header>
+                                <h2 class="major">
+                                    <i class="fas fa-oil-can"></i>
+                                    Oil, Time, and the Energy Transition
+                                </h2>
+                                <hr>
+                            </header>
+
+                            <!-- PROJECT OVERVIEW -->
+                            <div style="
+                                display:flex;
+                                align-items:flex-start;
+                                flex-wrap:wrap;
+                                gap:25px;
+                                margin-bottom:30px;
+                            ">
+
+                                <div style="
+                                    width:32%;
+                                    max-width:255px;
+                                    min-width:210px;
+                                    flex-shrink:0;
+                                ">
+                                    <img
+                                        src="assets/css/images/oil_energy_thumbnail.png"
+                                        alt="Global oil reserves and energy transition"
+                                        style="
+                                            width:100%;
+                                            aspect-ratio:1 / 1;
+                                            object-fit:cover;
+                                            border-radius:50%;
+                                            display:block;
+                                        "
+                                    />
+                                </div>
+
+                                <div style="flex:1 1 350px; min-width:0;">
+
+                                    <h3>Project Overview</h3>
+
+                                    <p>
+                                        Modern society remains heavily dependent
+                                        on oil for transportation, manufacturing,
+                                        agriculture, and the production of countless
+                                        everyday materials. Yet oil is a finite
+                                        resource, raising important questions about
+                                        how much remains, how long production can
+                                        continue, and what the global energy system
+                                        might look like in the coming decades.
+                                    </p>
+
+                                    <p>
+                                        This project examines global oil reserves,
+                                        historical production, remaining resources,
+                                        and potential future supply using publicly
+                                        available data from the U.S. Energy Information
+                                        Administration (EIA), OPEC, the U.S. Geological
+                                        Survey (USGS), and the International Energy
+                                        Agency (IEA).
+                                    </p>
+
+                                    <p>
+                                        Rather than attempting to predict exactly
+                                        when the world will run out of oil, the
+                                        analysis investigates how reserves and
+                                        production have evolved, why existing oil
+                                        fields decline, and how different energy
+                                        scenarios could influence future oil demand.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- QUESTIONS -->
+                            <h3>Questions</h3>
+
+                            <p>
+                                The project was organized around several
+                                related questions:
+                            </p>
+
+                            <ul style="font-size:1.5em; line-height:1.6;">
+                                <li>Where are the world's remaining proved oil reserves located?</li>
+                                <li>Why have global oil reserves not declined steadily despite continued extraction?</li>
+                                <li>How much oil remains in discovered and undiscovered resources?</li>
+                                <li>Can existing oil fields sustain current production through 2050?</li>
+                                <li>Where would additional oil production need to come from?</li>
+                                <li>How might global oil and renewable energy supply change under different energy scenarios?</li>
+                            </ul>
+
+                            <hr>
+
+                            <!-- ANALYTICAL APPROACH -->
+                            <h3>Analytical Approach</h3>
+
+                            <p>
+                                Global oil reserve and production datasets were
+                                cleaned, integrated, and visualized using R.
+                                Historical proved reserves were compared with
+                                annual production to calculate the
+                                reserves-to-production ratio, a commonly used
+                                indicator of the relationship between reported
+                                reserves and current extraction rates.
+                            </p>
+
+                            <p>
+                                Country-level reserves were mapped to examine
+                                their geographic distribution. Published
+                                estimates of proved reserves, discovered but
+                                unapproved resources, and undiscovered conventional
+                                oil were then compared to illustrate the different
+                                categories used to describe remaining petroleum
+                                resources.
+                            </p>
+
+                            <p>
+                                Finally, IEA field-decline estimates and energy
+                                scenarios were used to examine potential oil
+                                production through 2050, the additional resources
+                                that could be needed to sustain production, and
+                                possible changes in the balance between oil and
+                                renewable energy.
+                            </p>
+
+                            <p>
+                                Historical observations, published estimates,
+                                and future scenarios are distinguished throughout
+                                the analysis. Resource estimates are not
+                                necessarily additive, and future pathways should
+                                not be interpreted as guaranteed forecasts.
+                            </p>
+
+                            <hr>
+
+                            <!-- QUESTION 1 -->
+                            <h3>1. Where Is the World's Oil?</h3>
+
+                            <div class="story-row">
+
+                                <div class="story-text">
+
+                                    <p>
+                                        The first question was where the world's
+                                        remaining proved oil reserves are located.
+                                        Proved reserves represent quantities of oil
+                                        estimated to be commercially recoverable
+                                        from known reservoirs under specified
+                                        technical and economic conditions.
+                                    </p>
+
+                                    <p>
+                                        The global distribution is highly uneven.
+                                        Countries including Venezuela, Saudi Arabia,
+                                        Iran, Canada, and Iraq contain some of the
+                                        largest reported proved reserves.
+                                    </p>
+
+                                    <p>
+                                        Venezuela alone was reported to hold
+                                        approximately <b>304 billion barrels</b>,
+                                        followed by Saudi Arabia with approximately
+                                        <b>259 billion barrels</b> in the country-level
+                                        dataset used for this analysis.
+                                    </p>
+
+                                    <p>
+                                        However, large reported reserves do not
+                                        necessarily translate into high production.
+                                        Extraction costs, infrastructure, geology,
+                                        investment, and political or economic
+                                        conditions all influence how much oil can
+                                        actually be produced.
+                                    </p>
+
+                                </div>
+
+                                <div class="story-figure">
+                                    <img
+                                        class="clickable-img"
+                                        src="assets/css/images/Slide_2_World_Oil_Reserves.png"
+                                        alt="World map of proved oil reserves by country"
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <!-- QUESTION 2 -->
+                            <h3>2. Why Haven't Oil Reserves Run Out?</h3>
+
+                            <div class="story-row reverse">
+
+                                <div class="story-text">
+
+                                    <p>
+                                        Oil is continuously extracted and consumed,
+                                        so it might seem reasonable to expect
+                                        reported reserves to decline every year.
+                                        However, historical data show that global
+                                        proved reserves have not followed this
+                                        simple pattern.
+                                    </p>
+
+                                    <p>
+                                        Between 2004 and 2021, reported global
+                                        proved reserves generally increased, even
+                                        as annual oil production continued at
+                                        approximately 27–30 billion barrels per year.
+                                    </p>
+
+                                    <p>
+                                        This happens because proved reserves are
+                                        not a fixed measure of all oil remaining
+                                        underground. New discoveries, technological
+                                        improvements, changes in oil prices, and
+                                        revisions to existing fields can change
+                                        how much oil qualifies as commercially
+                                        recoverable.
+                                    </p>
+
+                                    <p>
+                                        The reserves-to-production ratio increased
+                                        from approximately <b>47 years to nearly
+                                        59 years</b> during the analyzed period.
+                                        However, this ratio assumes production
+                                        remains constant and does not represent
+                                        a forecast of when oil will run out.
+                                    </p>
+
+                                </div>
+
+                                <div class="story-figure">
+                                    <img
+                                        class="clickable-img"
+                                        src="assets/css/images/p_history.png"
+                                        alt="Historical global proved reserves, oil production and reserves-to-production ratio"
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <!-- QUESTION 3 -->
+                            <h3>3. How Much Oil Is Left to Extract?</h3>
+
+                            <div class="story-row">
+
+                                <div class="story-text">
+
+                                    <p>
+                                        Proved reserves are only one category
+                                        of remaining oil. Additional petroleum
+                                        resources may already have been discovered
+                                        but not approved for development, while
+                                        other resources remain undiscovered.
+                                    </p>
+
+                                    <p>
+                                        OPEC reported approximately
+                                        <b>1,567 billion barrels of global proved
+                                        crude oil reserves</b> at the end of 2024.
+                                    </p>
+
+                                    <p>
+                                        The IEA identified approximately
+                                        <b>230 billion barrels</b> associated with
+                                        discovered but unapproved resources,
+                                        while a USGS assessment estimated
+                                        approximately <b>565 billion barrels</b>
+                                        of technically recoverable undiscovered
+                                        conventional oil outside the United States.
+                                    </p>
+
+                                    <p>
+                                        These estimates describe different
+                                        resource categories, geographic scopes,
+                                        and assessment periods. They should
+                                        <b>not simply be added together</b>
+                                        to calculate a single global oil total.
+                                    </p>
+
+                                    <p>
+                                        Importantly, technically recoverable
+                                        oil is not necessarily economically
+                                        profitable to extract.
+                                    </p>
+
+                                </div>
+
+                                <div class="story-figure">
+                                    <img
+                                        class="clickable-img"
+                                        src="assets/css/images/p_oil_supply.png"
+                                        alt="Comparison of proved oil reserves and additional petroleum resource estimates"
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <!-- QUESTION 4 -->
+                            <h3>4. Can Existing Oil Fields Sustain Today's Demand?</h3>
+
+                            <div class="story-row reverse">
+
+                                <div class="story-text">
+
+                                    <p>
+                                        Even when substantial oil remains
+                                        underground, maintaining production
+                                        is not guaranteed. Oil fields naturally
+                                        experience declining output as reservoir
+                                        pressure decreases and recoverable oil
+                                        becomes progressively more difficult
+                                        to extract.
+                                    </p>
+
+                                    <p>
+                                        IEA field-decline estimates illustrate
+                                        how global production could change
+                                        under different levels of investment
+                                        and development.
+                                    </p>
+
+                                    <p>
+                                        In a scenario without new investment,
+                                        production from existing fields declines
+                                        rapidly. Continued investment in existing
+                                        fields and already approved projects
+                                        can slow this decline, but the analyzed
+                                        pathway still falls to approximately
+                                        <b>50.6 million barrels per day by 2050</b>.
+                                    </p>
+
+                                    <p>
+                                        For comparison, the analysis uses a
+                                        reference production level of approximately
+                                        <b>98.4 million barrels per day in 2025</b>.
+                                    </p>
+
+                                    <p>
+                                        This creates a central challenge:
+                                        sustaining high production requires
+                                        continued investment, new development,
+                                        or additional discoveries, even before
+                                        accounting for potential changes in demand.
+                                    </p>
+
+                                </div>
+
+                                <div class="story-figure">
+                                    <img
+                                        class="clickable-img"
+                                        src="assets/css/images/p_oil_supply.png"
+                                        alt="Historical oil production and IEA field-decline scenarios through 2050"
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <!-- QUESTION 5 -->
+                            <h3>5. Where Would Future Oil Production Come From?</h3>
+
+                            <div class="story-row">
+
+                                <div class="story-text">
+
+                                    <p>
+                                        If the world attempts to maintain
+                                        production near current levels through
+                                        2050, existing and approved projects
+                                        alone may not provide sufficient output.
+                                    </p>
+
+                                    <p>
+                                        The illustrative production pathway
+                                        combines approximately
+                                        <b>50.6 million barrels per day</b>
+                                        from existing and approved projects,
+                                        <b>28 million barrels per day</b>
+                                        from discovered but unapproved resources,
+                                        and <b>18 million barrels per day</b>
+                                        from future discoveries.
+                                    </p>
+
+                                    <p>
+                                        Together, these components illustrate
+                                        the scale of additional development
+                                        potentially required to sustain oil
+                                        production near present levels.
+                                    </p>
+
+                                    <p>
+                                        The additional contributions are
+                                        conditional estimates, not guaranteed
+                                        future production. Whether they materialize
+                                        depends on discoveries, investment,
+                                        development timelines, economics,
+                                        and environmental and energy policies.
+                                    </p>
+
+                                    <p>
+                                        The need for additional production
+                                        would also depend strongly on how
+                                        global oil demand evolves.
+                                    </p>
+
+                                </div>
+
+                                <div class="story-figure">
+                                    <img
+                                        class="clickable-img"
+                                        src="assets/css/images/Slide_6_Oil_Resources.png"
+                                        alt="Illustrative sources of oil production needed to sustain output in 2050"
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <!-- QUESTION 6 -->
+                            <h3>6. Will the World Still Need Oil in 2050?</h3>
+
+                            <div class="story-row reverse">
+
+                                <div class="story-text">
+
+                                    <p>
+                                        The final question is not simply
+                                        how much oil remains, but how much
+                                        the world will need in the future.
+                                    </p>
+
+                                    <p>
+                                        The IEA's World Energy Outlook 2025
+                                        presents several scenarios describing
+                                        different potential energy pathways.
+                                        These scenarios depend on assumptions
+                                        about government policies, technology,
+                                        investment, and energy demand.
+                                    </p>
+
+                                    <p>
+                                        Under the <b>Current Policies Scenario</b>,
+                                        global oil energy supply reaches
+                                        approximately <b>215 exajoules (EJ)</b>
+                                        in 2050, while renewable energy
+                                        supply reaches approximately
+                                        <b>139 EJ</b>.
+                                    </p>
+
+                                    <p>
+                                        Under the <b>Stated Policies Scenario</b>,
+                                        oil supply is approximately
+                                        <b>184 EJ</b> and renewables reach
+                                        <b>152 EJ</b>.
+                                    </p>
+
+                                    <p>
+                                        Under the <b>Net Zero Emissions Scenario</b>,
+                                        oil supply falls much more substantially
+                                        to approximately <b>45 EJ</b>, while
+                                        renewable energy supply increases to
+                                        approximately <b>258 EJ</b>.
+                                    </p>
+
+                                    <p>
+                                        These pathways demonstrate that
+                                        future oil dependence is not determined
+                                        solely by geological availability.
+                                        Energy policy, technological development,
+                                        and the pace of electrification and
+                                        renewable deployment are also important.
+                                    </p>
+
+                                </div>
+
+                                <div class="story-figure">
+                                    <img
+                                        class="clickable-img"
+                                        src="assets/css/images/Slide_7_Oil_Energy_Transition.png"
+                                        alt="IEA oil and renewable energy supply scenarios through 2050"
+                                    />
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <!-- CONCLUSION -->
+                            <h3>Conclusion</h3>
+
+                            <p>
+                                The world's oil resources are substantial,
+                                but their availability does not guarantee
+                                continued production at current levels.
+                                Proved reserves change with economic conditions,
+                                technological developments, and new discoveries,
+                                while existing oil fields naturally decline
+                                over time.
+                            </p>
+
+                            <p>
+                                The analysis highlights two related challenges.
+                                First, maintaining high oil production requires
+                                continued investment and development as
+                                existing fields decline. Second, the amount
+                                of additional oil that will actually be needed
+                                depends on future energy demand.
+                            </p>
+
+                            <p>
+                                The IEA scenarios show that the future role
+                                of oil varies considerably depending on
+                                policy choices and the pace of the energy
+                                transition. Under current policies, oil
+                                remains a major component of the global
+                                energy system in 2050. Under a net-zero
+                                pathway, its role becomes substantially smaller.
+                            </p>
+
+                            <p>
+                                Ultimately, the question is not only
+                                <b>how much oil remains underground</b>,
+                                but also how society chooses to meet
+                                its energy needs in the decades ahead.
+                            </p>
+
+                        </article>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="col-4 col-12-narrower">
+                    <div id="sidebar">
+
+                        <h6>Project Demo</h6>
+
+                        <section>
+                            <img
+                                class="clickable-img"
+                                src="assets/css/images/Oil/oil_cover.png"
+                                alt="Oil reserves and energy transition project"
+                                style="width:100%; cursor:pointer;"
+                            />
+                        </section>
+
+                        <h6>Technologies Used</h6>
+
+                        <p>
+                            <b>Data Handling Environments:</b>
+                            RStudio & Excel
+                        </p>
+
+                        <p>
+                            <b>Languages:</b>
+                            R programming
+                        </p>
+
+                        <p>
+                            <b>Analysis:</b>
+                            Time-series analysis, reserves-to-production
+                            calculations, scenario comparisons,
+                            data integration and spatial analysis
+                        </p>
+
+                        <p>
+                            <b>Visualization Tools:</b>
+                            RStudio, ggplot2 & sf
+                        </p>
+
+                        <p>
+                            <b>Version Control:</b>
+                            Git & GitHub
+                        </p>
+
+                        <h6>Dataset Information</h6>
+
+                        <p>
+                            <b>Country-Level Oil Reserves:</b>
+                            <br>
+                            U.S. Energy Information Administration (EIA)
+                            via Our World in Data
+                        </p>
+
+                        <p>
+                            <b>Global Proved Crude Oil Reserves:</b>
+                            <br>
+                            OPEC Annual Statistical Bulletin (2025)
+                        </p>
+
+                        <p>
+                            <b>Discovered and Unapproved Resources:</b>
+                            <br>
+                            International Energy Agency (2025)
+                        </p>
+
+                        <p>
+                            <b>Undiscovered Conventional Oil:</b>
+                            <br>
+                            U.S. Geological Survey (2012)
+                        </p>
+
+                        <p>
+                            <b>Oil Field Decline:</b>
+                            <br>
+                            IEA, The Implications of Oil and Gas
+                            Field Decline Rates (2025)
+                        </p>
+
+                        <p>
+                            <b>Future Energy Scenarios:</b>
+                            <br>
+                            IEA, World Energy Outlook 2025
+                        </p>
+
+                        <p>
+                            <b>Description:</b>
+                            <br>
+                            This analysis examines global oil reserves,
+                            historical production, remaining petroleum
+                            resources, and potential future oil supply
+                            and energy demand through 2050.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+</div>
+
+<!-- IMAGE MODAL -->
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgFull" />
+</div>
+
+<!-- SCRIPTS -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<style>
+    .story-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 35px;
+    }
+
+    .story-text {
+        flex: 1 1 300px;
+        min-width: 0;
+    }
+
+    .story-figure {
+        flex: 0 1 350px;
+        max-width: 350px;
+        min-width: 0;
+    }
+
+    .story-figure img {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .story-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 736px) {
+        .story-row,
+        .story-row.reverse {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .story-figure {
+            max-width: 100%;
+            width: 100%;
+            flex: none;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // Remove empty mobile title
+        var titleBarTitle =
+            document.querySelector("#titleBar .title");
+
+        if (
+            titleBarTitle &&
+            (
+                titleBarTitle.textContent === "undefined" ||
+                titleBarTitle.textContent.trim() === ""
+            )
+        ) {
+            titleBarTitle.textContent = "";
+        }
+
+        // Image modal
+        const modal = document.getElementById("imgModal");
+        const modalImg = document.getElementById("imgFull");
+        const closeBtn = document.querySelector("#imgModal .close");
+
+        document.querySelectorAll(".clickable-img").forEach(img => {
+            img.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+            });
+        });
+
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        modal.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                modal.style.display = "none";
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>
