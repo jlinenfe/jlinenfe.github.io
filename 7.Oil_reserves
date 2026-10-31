@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -330,7 +331,7 @@
                                 <div class="story-figure">
                                     <img
                                         class="clickable-img"
-                                        src="assets/css/images/p_oil_supply.png"
+                                        src="assets/css/images/Slide_6_Oil_Resources.png"
                                         alt="Comparison of proved oil reserves and additional petroleum resource estimates"
                                     />
                                 </div>
@@ -453,7 +454,7 @@
                                 <div class="story-figure">
                                     <img
                                         class="clickable-img"
-                                        src="assets/css/images/Slide_6_Oil_Resources.png"
+                                        src="assets/css/images/p_replacement.png"
                                         alt="Illustrative sources of oil production needed to sustain output in 2050"
                                     />
                                 </div>
@@ -583,8 +584,8 @@
                         <section>
                             <img
                                 class="clickable-img"
-                                src="assets/css/images/Oil/oil_cover.png"
-                                alt="Oil reserves and energy transition project"
+                                src="assets/css/images/insta_1st_slide.png"
+                                alt="Oil reserves and energy transition project cover"
                                 style="width:100%; cursor:pointer;"
                             />
                         </section>
